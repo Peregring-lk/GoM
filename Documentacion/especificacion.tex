@@ -1,0 +1,140 @@
+% Este archivo es parte de la memoria del proyecto fin de carrera
+% de Aarón Bueno Villares. Protegida bajo la licencia GFDL.
+%
+% Para más información, la licencia completa viene incluida en el
+% fichero fdl-1.3.tex
+
+% Copyright (C) 2010 Aarón Bueno Villares
+
+\section{Especificación de requisitos del sistema}
+\label{sec:ers}
+
+\subsection{Introducción}
+
+Esta sección es una \emph{Especificación de Requisitos Software} (ERS) para el videojuego 2D de táctica militar basado en turnos, basado en reglamento y de corte medieval-fantástico \gomf. Esta especificación ha sido elaborada bajo el marco diseñado por el estándar \emph{IEEE Recommended Practice for Software Requirements Specification ANSI/IEEE 830 1998}.
+
+\subsubsection{Propósito}
+\label{sec:proposito}
+El propósito de esta especificación es fundamentar las bases funcionales de \gomf. Está orientado tanto a los usuarios del sistema como a futuros desarrolladores. Esta especificación está sujeta a revisiones durante el ciclo de vida del producto, según las nuevas exigencias por parte de los usuarios finales, según posibles futuras inconsistencias o carencias, así como por los posibles caprichos de adición de funcionalidades por parte de el/los desarrollador/es.
+
+\subsubsection{Alcance}
+\label{sec:proposito}
+
+\paragraph{\gomf}
+\gom es un videojuego libre 2D de táctica militar por turnos y de corte fantástico-medieval (free fantasy turn-based tactics 2D-videowargame), de licencia GPL, y basado en reglamento (especificación estricta de todas las acciones posibles).
+
+Está inspirado fuertemente en \textit{Warhammer Fantasy Battles} -de una alta vitalidad en el mercado-, un juego del mismo género, pero de mesa y con miniaturas, propiedad de la empresa inglesa Games Workshop.
+
+\paragraph{Objetivos}
+Este proyecto abarca la misión principal de desarrollar una alternativa digital, libre y gratuita, y si es posible, mejorada, del paradigma de juego cuyo máximo representante es \textit{Warhammer Fantasy Battles}.
+
+No tiene como objetivo ser un juego de amplia difusión, ni con pretensiones de seducir a cualquier usuario potencial. Sus pretensiones van mas bien encaminadas a satisfacer las necesidades de jugadores que ya conocen dicho paradigma o para entusiastas de la táctica en general. Lo mas probable es que, para un jugador medio, el juego le parezca de lo mas artificial.
+
+\paragraph{\emph{¿Qué hace y qué no hace el producto?}}
+Esta pregunta se responde de la siguiente manera:
+\begin{enumerate}
+\item \gom no es un juego de estrategia, es un juego táctico.
+
+La diferencia entre la táctica y la estrategia es difusa. La estrategia hace referencia a un propósito general, y la táctica al método para un fin específico. Estrategia es organizar una campaña militar en el lejano oriente. Táctica es un conjunto de movimientos específicos para ganar una batalla concreta, en la vida de dicha campaña. \gom se adentra en la segunda categoría.
+ 
+\item \gom no es un juego de rol.
+
+En los juegos de rol, el juego se organiza entorno a un personaje o conjunto reducido de personajes, que tienen una personalidad, un propósito y unas características. Mediante un conjunto de atributos, se modela toda la cosmovisión del/los personaje/s.
+
+En \gomf, cada partida es independiente, y, aunque los distintos efectivos de cada unidad tengan atributos específicos que la modelan, la experiencia y posibles mejoras del usuario no tendrán efecto ninguno en el juego. \gom no distinguirá si un usuario es novato o un experto comandante, y la ejecución de una partida no tendrá efectos en la ejecución de partidas futuras, ni dependerá del éxito en partidas anteriores.
+
+\item \gom no es un juego de tablero.
+
+Un juego de tablero está basado en fichas que se desplazan sobre una
+superficie organizada en casillas. \gomf, sin embargo, está mas bien un juego basado en elementos (unidades y efectivos) que pueden posicionarse en cualquier lugar de la ``mesa de juego''. Esto significa que los movimientos son completamente libres, y no están restringidos a movimientos en cantidades discretas, ni a posicionamiento en casillas.
+
+\textit{Fantasy Wars} es el juego mas similar que he podido encontrar a \gom, pero está basado en un tablero tipo colmena (casillas hexagonales), y el jugador de ese modo ve limitada sus posibilidades de movimiento.
+
+\end{enumerate}
+
+\subsubsection{Visión general}
+Esta ERS está organizada en tres subsecciones, a saber:
+\begin{itemize}
+\item  \textit{Introducción}: Es la subsección que en este momento
+  estás leyendo. Explica qué es el producto y las directrices generales del documento.
+\item \textit{Requisitos generales}: Se da una visión global del
+  contexto funcional del producto: hardware y software implicado, así
+  como la funcionalidad de mas alto nivel.
+\item \textit{Requisitos específicos}. Se muestran, en concreto, cada una de las funcionalidades implicadas en el sistema.  
+\end{itemize}
+
+\subsection{Requisitos generales}
+\subsubsection{Perspectiva del producto}
+\begin{itemize}
+\item \gom no pertenece a ningún producto mayor ni es parte de ningún otro software.
+\end{itemize}
+
+\subsubsection{Funciones del juego}
+\begin{itemize}
+\item La función principal del juego es permitir el enfrentamiento entre dos ejércitos, cada uno comandado por un usuario humano, según el reglamento de \gomf.
+\item El usuario podrá crear su propio ejército.
+\end{itemize}
+
+\subsubsection{Características de los usuarios}
+\begin{itemize}
+\item Los usuarios que comanden cada ejército en una batalla deberán estar presentes en la misma máquina en la que se ejecute el juego.
+
+\item Una vez los usuarios conozcan superficialmente el reglamento (las reglas mas generales), no tendrán problemas en habituarse velozmente y de forma intuitiva al uso del juego.
+\end{itemize}
+
+\subsubsection{Restricciones}
+\begin{itemize}
+\item El software tendrá una licencia libre, y en concreto, correrá bajo los derechos recogidos por la licencia GPL (GNU Public License).
+\item Toda biblioteca usada para la implementación de este proyecto deberá ser multiplataforma.
+\end{itemize}
+
+\subsubsection{Suposiciones y dependencias}
+Se asume que todos los requisitos descritos en esta especificación son consistentes e inmutables para la versión actual del producto. Todo posible cambio o modificación futura generará indefectiblemente una nueva versión del producto. La versión del producto actual es la 1, y será, asimismo, la versión de esta especificación así como la versión del documento de diseño generado a partir de esta especificación.
+
+Si se propone una ampliación de los requisitos del sistema, sin modificar los existentes, se generará indefectiblemente una nueva subversión del producto. La subversión actual es la 1.0, y será, asimismo, la subversión de esta especificación así como la subversión del documento de diseño generado a partir de esta especificación.
+
+\subsection{Requisitos específicos}
+
+\subsubsection{Requisitos de interfaz externa}
+
+\requisito{requisitos/interfazusuario}
+\requisito{requisitos/interfazhardware}
+\requisito{requisitos/velocidadreaccion}
+\requisito{requisitos/resolucionpantalla}
+\requisito{requisitos/sonido}
+
+\subsubsection{Requisitos funcionales}
+
+\requisito{requisitos/comenzarbatalla}
+\requisito{requisitos/crearejercito}
+\requisito{requisitos/editarejercito}
+\requisito{requisitos/salir}
+\requisito{requisitos/modificarejercito}
+\requisito{requisitos/elegirraza}
+\requisito{requisitos/informaciontarea}
+\requisito{requisitos/ejecutartarea}
+
+\subsubsection{Requisitos de rendimiento}
+
+\requisito{requisitos/tiempo}
+\requisito{requisitos/memoria}
+
+\subsubsection{Restricciones de diseño}
+
+\requisito{requisitos/enfoqueOO}
+\requisito{requisitos/estandardiseno}
+
+\subsubsection{Atributos del sistema software}
+
+\requisito{requisitos/completitud}
+\requisito{requisitos/documentacion}
+\requisito{requisitos/escalabilidad}
+\requisito{requisitos/portabilidad}
+\requisito{requisitos/robustez}
+\requisito{requisitos/usabilidad}
+\requisito{requisitos/licencia}
+
+\subsubsection{Otros requisitos}
+
+\requisito{requisitos/implementacion}
+\requisito{requisitos/librerias}

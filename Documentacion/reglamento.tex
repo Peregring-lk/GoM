@@ -1,0 +1,1577 @@
+% Este archivo es parte de la memoria del proyecto fin de carrera
+% de Aarón Bueno Villares. Protegida bajo la licencia GFDL.
+%
+% Para más información, la licencia completa viene incluida en el
+% fichero fdl-1.3.tex
+
+% Copyright (C) 2010 Aarón Bueno Villares
+
+\chapter{Reglamento}
+\phantomsection
+\label{reglamento}
+
+\begin{center}
+{\bf\large Preámbulo}
+
+\begin{minipage}{12cm}
+{\small
+Este documento describe el reglamento general aplicado en cada uno de
+los pasos de la resolución de una partida en \gom, versión 1.0. Así,
+aquí se incluyen las reglas aplicadas sobre movimiento, combate, disparos
+o magia. Este documento debe tenerse presente siempre y de forma estricta a la hora de organizar un ejército o una táctica, pues ideas que requieran actos no regidos en este reglamento no se podrán hacer efectivos en la partida.}
+\end{minipage}
+\end{center}
+
+\section*{Introducción}
+\label{introduccion}
+\gom pretende ser una simulación de escenarios en los que poder llevar
+a cabo tácticas militares, con un corte medieval y fantástico. Este reglamento es completo, y contiene
+todas las reglas aplicables del juego. Nada de lo expresado fuera de
+este documento, será legal en una partida de \gomf, y si en algún lugar relacionado con el proyecto oficial de \gom se afirma algo que contradiga cualquier cosa aquí escrita, siempre tendrá mas validez la versión de este reglamento.
+
+\subsection*{Panorámica general}
+\gom permite enfrentar a dos ejércitos en una batalla campal. Al igual
+que en las batallas históricas, un ejército está formado por unidades,
+y el objetivo es organizar dichas unidades para conseguir la
+victoria. Y es por ello que \gom es un juego de táctica militar. El
+corte u ambiente del juego es medieval y fantástico, y las unidades y
+los ejércitos tienen un comportamiento en el campo de batalla que los
+asemeja a las batallas que se protagonizaban en el medievo (que son
+herencia del paradigma de guerra de la antiguedad clásica) o como vemos en las guerras de muchas películas de
+fantasía, y que son muy distintas a como se llevan a cabo las guerras
+en la actualidad.
+
+Es por ello que se desea rescatar este espíritu tomando forma en un
+juego orientado a su reproducción en un medio digital, paradigma que,
+en el mundo de los videojuegos, no consta de ningún ejemplar. El
+reglamento en sí sirve para que cualquier jugador pueda generar
+batallas militares incluso en su propio salón, con papeles, o con
+miniaturas diseñadas. \gom es independendiente de la finalidad
+práctica que se le de a este reglamento.
+
+\subsection*{Mecánica del juego}
+El juego está organizado en turnos, y consta de dos ejércitos formados
+por unidades. Un jugador efectúa su turno de
+juego y luego el oponente juega el suyo, hasta 6 turnos por jugador. A
+su vez, cada turno de cada jugador está organizado en tres fases a
+resolver en orden: movimiento, combate y disparos.
+
+\paragraph{Confección y despliegue}
+Una vez ambos jugadores hayan confeccionado sus propios ejércitos y
+hayan decidido una posición inicial para cada una de sus unidades,
+desplegarán sus tropas en su zona de despliegue (dependiendo de quién
+se haya asignado el rol de jugador 1 y quién de jugador 2) y podrá comenzar la batalla.
+
+\paragraph{Unidades, atributos y características}
+Cada unidad tiene una serie de atributos que definen las
+particularidades de la naturaleza interna de cada uno de los efectivos
+de una unidad. Existen
+diversos atributos, como movimiento o fuerza. A su vez una unidad
+puede tener una serie de características, que no dependen de la
+naturaleza de la unidad, sino generalmente de su equipaje o
+complementos de la unidad (o también del tamaño de los efectivos),
+estas características son la salvación por armadura, la fuerza de
+arma, el alcance de arma, la potencia y el rango de ocupación.
+
+\paragraph{Turnos de juego}
+Se realizarán hasta seis turnos alternos por jugador. Cada turno contiene tres fases, que se detallarán a continuación:
+
+\begin{enumerate}
+\item \textit{Movimiento}
+Como su nombre indica, aquí es dónde se permite \emph{elegir} qué movimientos y cargas pueden efectuar tus unidades. Es la fase con mas reglas y restricciones.
+
+\item \textit{Combate}
+Si dos o mas unidades se encuentran en un combate, se resolverán en
+esta fase, para cada jugador.
+
+\item \textit{Disparos}
+Aquellas unidades que dispongan de armas de proyectiles, podrán
+disparar a otras unidades enemigas.
+
+\end{enumerate}
+
+\paragraph{Fin de la partida}
+Una vez que finalicen los cinco turnos, la partida se anunciará como
+finalizada. Se calcula quien ha sido mejor comandante y la categoría de su victoria.
+
+\subsection*{Vocabulario}
+\label{vocabulario}
+\subsubsection*{Escala}
+Aunque los jugadores podrán (y deberían) aplicar cualquier escala
+deseada -siempre en proporción a la aquí indicada-, este reglamento
+contabilizara todas sus medidas espaciales en unidades que llamaremos
+unidades de terreno o simplemente \textit{u}. \textit{u} podrá ser
+tanto un metro, como un pixel, como una pulgada (o si apetece, un
+kilómetro). Esto ya recae sobre la decisión de los propios
+usuarios. Con respecto a los costes económicos de las unidades, a cada
+unidad de coste, o también puntuación, se le designara sencillamente con el calificativo \textit{p}. Así, por ejemplo, una unidad de caballeria ocupa un frente de 10u, un lado de 20u, y un coste de 35p.
+
+\subsubsection*{Ejércitos}
+\gom enfrenta a dos ejércitos. Un ejército está formado por unidades,
+y una unidad por efectivos. El efectivo será el elemento básico de
+cada ejército.
+
+\subsubsection*{Despliegue}
+Desplegar es el hecho de elegir una posición inicial para cada una de
+las unidades de un ejército. Se le denomina fase o tiempo de
+despliegue al hecho de colocar las unidades en el campo de batalla,
+según el despliegue elegido.
+
+\subsubsection*{Combatientes}
+Existirán dos jugadores por partida, y cada uno comandará uno de los
+ejércitos enfrentados. Después de que cada jugador haya elegido su
+ejército y confeccionado su despliegue, decidirán quién responderá
+como jugador 1, y quién como jugador 2. En este sentido, el ejército
+es independiente de la partida, y un jugador podrá confeccionar un
+ejército y su correspondiente despliegue de forma aislada, y luego
+usarlo para diversas partidas diferentes. Lo que no podrá decidir de
+forma aislada será su orden de jugador (jugador 1 o jugador 2) que
+dependerá de cada partida y del acuerdo llegado con el oponente. 
+
+\subsubsection*{Escenario}
+\gom deberá jugarse sobre una superficie de 1.280u de ancho por 600u
+de alto, que será llamado escenario o campo de batalla. El formato del
+escenario sera apaisado, es decir, que el eje x del escenario mide los
+1.280u de ancho, y el eje y mide los 600u de alto. El eje x se expande
+de izquierda a derecha, y el eje y en dirección sur-norte.
+
+El escenario se divide en tres secciones rectángulares paralelas al
+eje x. La primera se expande en las primeras 100u del eje formando
+un rectángulo de 1.280u por 100u. Se denominará zona de despligue
+uno, y será la zona de despliegue correspondiente al primer jugador o
+ejército. La segunda se expande desde 100u hasta las 500u en el eje y. Será
+la que divida a ambos ejércitos al inicio del combate. La tercera se
+expande desde las 500u hasta completar el escenario, en las 600u. Se
+denominará zona de despligue dos y será la zona de despliegue
+correspondiente al segundo jugador.
+
+\subsubsection*{Turnos y fases}
+Una partida se organiza en turnos. Se realizarán 6 turnos completos
+para cada jugador, de forma alterna. Es decir, el orden será el
+siguiente: \textit{Turno 1 del jugador 1}, \textit{Turno 1 del jugador
+  2}, \textit{Turno 2 del jugador 1}, \ldots, \textit{Turno 5 del
+  jugador 2}.
+
+Cada turno de cada jugador se divide en tres fases, fase de
+movimiento, fase de combate y fase de disparos, y deberán jugarse en ese orden. 
+
+\subsection*{Razas}
+Cada ejército será de una raza, y existen dos razas distintas: orcos y
+humanos. Cada raza define un conjunto de unidades distinto con un
+perfil de atributos propio. El conjunto concreto de unidades definidas
+en cada raza vendrá expresado en un apartado especial al final de éste
+reglamento.
+
+
+\section*{Atributos y características}
+\label{atributos}
+Una batalla está compuesta por una gran diversidad de unidades de distinta naturaleza. En \GoM la naturaleza de cada unidad se modula mediante unos valores llamados atributos y unas características. 
+
+\subsection*{Atributos}
+\paragraph{Movimiento (M)}
+Es el desplazamiento básico de una unidad en un turno de juego. Si una unidad posee un atributo de movimiento M10, significará que su desplazamiento básico es de 10u.
+
+\paragraph{Habilidad de armas (HA)}
+La habilidad que tiene cada efectivo de una misma unidad en combate
+cuerpo a cuerpo. Está ponderada de 0 a 10. 
+
+\paragraph{Habilidad de proyectiles (HP)}
+La habilidad que tiene cada efectivo en el disparo con armas de proyectiles. Está ponderada de 0 a 10. 
+
+\paragraph{Fuerza (F)}
+Este atributo mide la fuerza de cada efectivo de una misma unidad en combate cuerpo a cuerpo. Ponderada de 0 a 10.
+
+\paragraph{Resistencia (R)}
+Es la dureza del cada efectivo de una misma unidad en combate cuerpo a cuerpo. Ponderada de 0 a 10.
+
+\paragraph{Ataques (A)}
+El valor de este atributo indica cuántos ataques tiene un guerrero en
+un solo turno de combate.
+
+\paragraph{Heridas (H)}
+Este atributo pondera la dificultad para matar a un efectivo de la
+unidad. Es un valor mayor que 0. Si un efectivo recibe un número de
+impactos igual a su valor de heridas, se considerará una baja y el
+efectivo deberá retirarse del juego.
+
+\paragraph{Iniciativa (I)}
+Indica el reflejo y rapidez de cada efectivo de una misma unidad en combate cuerpo a cuerpo. Ponderada de 0 a 10.
+
+\paragraph{Liderazgo (L)}
+El liderazgo indica la valentia de una unidad. Ponderado de 0 a 10.
+
+\subsection*{Características}
+Por otro lado, existen otros valores llamados
+\emph{características}. Estos son la potencia, la salvación por
+armadura, la fuerza de arma, alcance del arma y el rango de ocupación.En general estos
+atributos no son propios de la naturaleza o el entrenamiento del
+guerrero, sino más bien de factores externos como armaduras o el peso
+que infiera la unidad en la batalla, como por ejemplo, la fuerza
+adicional que da ir montado en un caballo. También se incluye como
+característica el coste de una unidad.
+
+\paragraph{Potencia (P)}
+La potencia es el peso o valor (en sentido figurado) que tiene cada
+efectivo de una misma unidad en batalla. Por ejemplo un efectivo
+montado a caballo tiene más potencia que un efectivo de infantería, y
+a su vez un orco en jabalí tiene más potencia que un humano a pie. La
+potencia de una unidad es la potencia sumada de cada uno de sus
+efectivos.
+
+\paragraph{Salvación por Armadura (SA)}
+La salvación por armadura de una unidad es la dificultad que imponen
+sus armaduras, escudos o cascos a la hora de recibir, cada efectivo de
+una misma unidad, un golpe. Ponderado de 0 a 10.
+
+\paragraph{Fuerza de arma (FA)}
+Es la fuerza que poseen las armas de proyectiles de una
+unidad. Funciona igual que el atributo fuerza, pero solo actúa en la
+resolución de disparos. Está ponderado de 0 a 10.
+
+\paragraph{Alcance de arma (AA)}
+Es el alcance que poseen las armas de proyectiles de una unidad. Sus
+valores toman la misma forma que el atributo movimiento.
+
+\paragraph{Rango de ocupación (RO)}
+Cada efectivo tiene un \emph{rango de ocupación}, este rango de
+ocupación es el espacio que ocupa la presencia del efectivo en el
+campo de batalla (el suelo que pisa), que refleja el espacio ocupado
+por el efectivo en el mapa. El rango de ocupación de cada efectivo
+tiene siempre forma rectángular, y tanto su ancho como su alto es
+múltiplo de 5u.
+
+Por ejemplo, un efectivo de una legión de un ejército humano tiene un rango de ocupación de 10ux10u, y un efectivo de caballería un rango de ocupación de 10ux20u (el primer valor indica el rango de ocupación en el eje x del efectivo, y el segundo el rango de ocupación en su eje y).
+
+\paragraph{Coste en puntos}
+Existirá una última característica crucial llamada puntuación de un efectivo. Cada efectivo de una misma unidad tiene un mismo coste en puntos. El coste en puntos de una unidad será la suma del coste en puntos de cada uno de sus efectivos. El coste en puntos de cada efectivo de cada unidad está diseñado de modo que sea coherente y equilibrado con el resto de sus atributos y características, por ejemplo, una mejor HA y un alto liderazgo dará al efectivo un coste en puntos mayor que un efectivo con un valor menor en estos atributos.
+
+\subsection*{Perfil de atributos}
+Cada unidad del juego vendrá definido por un perfil de valores para cada una de los atributos y características definidas en el apartado anterior, en forma de tabla.
+
+\subsection*{Chequeo de atributos y características}
+\label{chequeo}
+La mayoría de los atributos pueden ser puestos a prueba durante la partida. Hay dos tipos de chequeos, los que son puesto en común con el adversario, o los chequeos individuales de los atributos.
+
+\subsubsection*{Chequeo individual}
+Los atributos y características sustentas a chequeo individual son todas aquellas que se han indicado como ponderadas de 0 a 10. Esto representa un porcentaje. Cuándo se hace un chequeo individual, se genera un número aleatorio entre 0 a 10, si el número generado es mayor que el valor actual del atributo o característica, se falla el chequeo, en caso contrario se supera. Sin embargo, si el número obtenido es 0, se falla el chequeo sin importar el valor del atributo, y si el valor obtenido es 10, se supera el chequeo automáticamente. Esto significa que una miniatura de I0 solo superará su chequeo de iniciativa cuando el número aleatorio obtenido sea 10. Estas reglas evitan que una unidad con un atributo o característica con el valor máximo o  mínimo siempre falle o supere respectivamente su chequeo individual.
+
+\subsubsection*{Chequeo comparativo}
+Los atributos y características sustentas a chequeo comparativo son todas aquellas que se han indicado como ponderadas de 0 a 10. Un chequeo comparativo es el hecho de chequear el valor de un atributo o característica de un efectivo con respecto al valor de un atributo o característica de otro efectivo. Cuando comparas dos atributos o características, siempre hay un atributo o característica agente y un atributo o característica pasiva. Por ejemplo, si un orco ataca a un humano y se debe comparar su F con la R del humano, el atributo agente será F, y el atributo pasivo será R. Lo que se hace en estos casos es restarle al atributo agente, la diferencia entre el atributo agente y pasivo. Por ejemplo, si el ataque fue de F4, y la resistencia del objetivo es R5, la diferencia entre ambos valores es 1, entonces el valor modificado del atributo agente F, será 4-1 = 3. Una vez modificado el valor, se hace un chequeo individual del valor modificado.
+
+\section*{Unidades}
+\subsection*{Formación de una unidad}
+\label{formacion}
+Hemos dicho que una unidad está formada por efectivos. Estos efectivos no se pueden organizar de cualquier forma, tienen que hacerlo de manera que formen una unidad bien formada. La formación de una unidad se llama formación en bloque.
+
+Una formación en bloque puede tener, en principio, cualquier número de
+efectivos, que deberán situarse unos junto a otros (los rangos de
+ocupación de los distintos efectivos son contiguos). La formación debe
+tener siempre forma de cuadro, es decir, posee filas con un mismo
+número de efectivos y alineados, como una matriz, salvo la última fila
+que puede tener cualquier número de componentes si por número no se
+consigue llenar entera. Si se consigue llenar, cualquier nuevo
+efectivo añadido a la unidad deberá colocarse en la fila
+inmediatamente posterior exáctamente detrás y alineado con un efectivo
+de la fila anterior. Los efectivos de la última fila deben estar
+siempre lo mas centrados posible. Por ejemplo, una unidad con un ancho
+de 5 efectivos, y una última fila de 3, tendrá a sus efectivos de la
+última fila colocados en las posiciones 2-3-4 (está centrado puesto
+que queda un \textit{efectivo libre} a cada lado).
+
+Por último, si el número de efectivos de la última fila no es adecuado
+para conseguir que esté centrado (por ejemplo, que el ancho de la
+unidad sea de 5 efectivos, y solo haya 2 en la última fila), se
+colocarán mas a la izquierda que a la derecha.  Por ejemplo una unidad
+con 21 efectivos y un ancho de fila de 6, tendrá 3 filas de 6
+efectivos alineados, y una última fila de 3 efectivos colocados en las
+posiciones 2-3-4, en vez de 3-4-5. 
+
+Las unidades también tienen un número mínimo de efectivos y un número
+máximo. Estos valores son restricciones de confección de
+ejército. Al elegir una unidad en el diseño de su ejército, el número
+de efectivos elegidos estará comprendido entre dicho número mínimo y
+dicho número máximo \refreg{confeccionejercito}. Evidentemente, en el
+transcurso de la partida, el número
+mínimo de efectivos se reducirá siempre que sea necesario. Cuando
+llege a cero, la unidad habrá sido aniquilada. El número máximo de
+efectivos no puede superarse puesto que no existen reglas que aumenten
+el número de efectivos en el transcurso de la partida.
+
+El número mínimo de efectivos que debe tener cualquier unidad en la
+primera fila (y por simple aplicación de la regla anterior, también el
+mínimo de efectivos que debe tener cualquier fila de la unidad; salvo
+la última), son 4 efectivos, a no ser que el número mínimo de
+efectivos (el mencionado en el párrafo anterior) sea también menos que
+cuatro. Si la unidad tiene menos de 4 efectivos, por ejemplo 3,
+obviamente no hay nada que hacer y la unidad se queda con un ancho de
+fila de 3 unidades. Si se añaden nuevos efectivos a la unidad, se
+deben de rellenar, como mínimo antes de crear una nueva fila, tantos
+efectivos como queden para completar una fila de 4.
+
+El encaramiento de la unidad será unívoca. Esto es, que todos los
+efectivos de una unidad de bloque mirarán en una misma dirección. Esto
+se reduce a decir que el encaramiento de la unidad vendrá dada por el
+encaramiento de su primera fila. La primera fila es la que siempre
+dirige a la unidad completa, y cualquier efectivo en filas secundarias
+o posteriores no tienen ningún derecho de mando en ninguno de los
+sentidos. Esto significa que a la hora de que la unidad efectúe
+cualquier acción, será la primera fila la que mande, y será la
+visibilidad de la primera fila la que importe \refreg{visibilidad}.
+
+La primera fila de una unidad se llamará frente, la última
+retaguardia, la primera columna flanco izquierdo, y la última columna
+flanco derecho. Los efectivos se cuentan de izquierda a derecha. Es
+decir, que el primer efectivo será el efectivo situado mas a la
+izquierda de la primera fila, y el último efectivo de la unidad será
+el situado mas a la derecha de la última fila.
+
+\subsection*{Visibilidad de una unidad}
+\label{visibilidad}
+La visibilidad de un efectivo dentro de una unidad viene dado por su encaramiento. Su
+ángulo de visión será de hasta 60º grados a su izquierda y de hasta
+60º hacia su derecha, es decir, un ángulo de visión total de 120º. La
+línea de visión izquierda se proyecta desde la esquina superior
+izquierda del rango de ocupación del efectivo con un ángulo de
+inclinación de 60º respecto a la perpendicular de su
+frente. Análogamente, la línea de visión derecha se proyecta desde la
+esquina superior derecha del rango de ocupación del efectivo con un
+ángulo de inclinación de -60º respecto a la perpendicular de su
+frente. La visión total del efectivo será el área encerrada por ambas
+líneas de visión. Los efectivos situados en filas posteriores de la
+unidad se considera que no ven nada, y la visibilidad de la unidad
+será la suma de la visibilidad de cada efectivo de su frente, es
+decir, será el área encerrada entre la línea de visión izquierda del
+primer efectivo del frente y la línea de visión derecha del último
+efectivo del frente de la unidad.
+
+En este punto, el primer requisito para que una unidad vea a otra es
+que dicha unidad esté dentro, al menos parcialmente, del área de
+visión.
+
+El segundo factor que delimita la visibilidad de un efectivo o unidad
+son los obstáculos de un terreno o la presencia de otras
+unidades. En este punto, para que una unidad vea a otra, basta con
+encontrar un segmento del frente de la unidad, de 5u de tamaño, otro
+segmento en una arista de la unidad de destino, también de un tamaño
+de 5u, y conectar los extremos formando un cuadrilatero. Si existe al
+menos un cuadrilatero de estas características que esté completamente
+libre, es decir, que ni siquiera esté parcialmente ocupada por ninguna
+otra unidad, la unidad estará viendo a dicha unidad objetivo.
+
+En realidad, cuando un cuadrilatero de estas características está
+parcialmente ocupado, no significa que la unidad no pueda ver que hay
+``mas allá'', solamente que la unidad no es capaz de identificar qué
+está viendo, y en este sentido, el ``ver'' y el ``caracterizar'' se
+confunden con este criterio, pues las situaciones en la que es
+necesario saber si una unidad ve a otra también es necesario admitir
+que la unidad sabe efectivamente que lo que está viendo es una unidad enemiga, ya que
+va a realizar una carga o un disparo.
+
+El hecho de elegir ese ``ancho'' de 5u de visión es una medida
+arbitraria suficiente para caracterizar la visión de una
+unidad. Ampliar o disminuir este ancho, sería equivalente a exigir
+un mayor o menor grado de calidad de la visión para caracterizar
+cuando una unidad \emph{reconoce} a otra.
+
+\section*{Preámbulos a una batalla}
+Antes de comenzar una partida, hace falta elegir una raza, diseñar un
+ejército, su despliegue y colocar las tropas en el campo de batalla en
+su lugar asignado correspondiente.
+
+\subsection*{Confección de un ejército}
+\label{confeccionejercito}
+Para confeccionar un ejército se elige una raza, y por último, se
+elige un conjunto de unidades con un número determinado de efectivos
+en cada una (que podrá variar de una unidad a otra) y la cantidad de
+efectivos inicial en el frente de la unidad, según los definidos por
+la raza elegida y las restricciones que ésta imponga. El tamaño en
+puntos del ejército es libre, en el sentido de que se podrá
+confeccionar un ejército tan grande como se desee. Las únicas
+restricciones al tamaño del ejército son las impuestas por las
+dimensiones del escenario, y en concreto, por la zona de despliegue,
+es decir, todo el ejército debe caber en la zona de despligue. Tampoco
+se recomienda diseñar un ejército con demasiadas unidades, pues
+podría limitar la maniobrabilidad. El tamaño impuesto para un
+escenario de \gom es lo suficientemente amplio como para manejar desde
+ejércitos pequeños a ejércitos mucho mas modestos.
+
+Además, la confección de un ejército va íntimimamente ligada a la
+confección de su despliegue, y estas dos propiedades de un ejército
+deben idearse juntas. La confección de un ejército no se da por
+concluida hasta que el despliegue del mismo no esté diseñado.
+
+Por último, una unidad tendrá siempre unas restricciones respecto al
+número mínimo y número máximo de efectivos con los que la unidad podrá
+desplegarse. En la descripción en las listas de ejército se indicará
+cuales son estos valores para cada unidad. En la confección del
+ejército, no se podrán diseñar unidades con un número de efectivos de
+despliegue distinto a este intervalo de valores impuesto.
+
+\subsection*{Confección del despliegue}
+\label{despliegue}
+Desplegar es posicionar al ejército en el campo de batalla antes de
+que ésta comience. Se impone que toda unidad despliegue mirando hacia
+el frente, se decir, con un ángulo de 0º respecto al eje x. Esto
+provoca la deseable situación de que los dos ejércitos comiencen
+frente a frente. A su vez, se impone, evidentemente, que toda unidad
+despliegue en su zona de despliegue \refreg{vocabulario}. Como la confección del ejército
+es independiente de una partida concreta (los ejércitos serán
+\textit{reusables}), no se puede suponer nada acerca de la zona de
+despliegue asignada. Es por tanto inadmisible intentar confeccionar un
+ejército conforme a una información que se conocerá luego. Por tanto,
+confeccionar el despliegue equivale a confeccionar un despliegue con
+la suposición añadida de que el jugador será el primero. Si luego
+resulta no serlo, solo hace falta desplegar las tropas en su posición
+simétrica respecto al campo de batalla.
+
+Por lo tanto, el único dato que se debe especificar al diseñar el
+despliegue de cada unidad únicamente será la posición de la unidad en
+el campo de batalla, y esto se hará declarándo la coordenada respecto
+al eje x e y de la esquina superior izquierda de la unidad; como la
+unidad se despliega recta, y el rango de ocupación, número de
+efectivos y frente de la unidad es conocido, la posición final de la
+unidad es inequívoca. Evidentemente, en el despliegue, toda unidad
+debe estar comprendida dentro de su zona de despliegue, al
+completo. Esto implica que no podrá colocarse ninguna unidad total ni
+parcialmente fuera de dicho espacio. Por ejemplo, una unidad de frente
+ancho cuya esquina superior derecha se declare muy cerca del borde
+derecho, podrá dejar la parte derecha de la unidad fuera de la zona de
+despliegue, y en general, fuera del campo de batalla. Esta es una
+situación que ha de controlarse. Unidades con demasiadas filas también
+pueden escapar parcialmente de la zona de despliegue.
+
+\subsection*{Organización de una partida}
+\label{organizacionpartida}
+Una batalla es única y exclusivamente el enfrentamiento de dos
+ejércitos. Esto implica un previo acuerdo entre los dos jugadores que
+harán de comandantes para ambos ejércitos. Los dos ejércitos,
+evidentemente, podrán ser tanto de la misma raza como de razas
+distintas. Por otro lado, los dos ejércitos no tienen ninguna
+restricción respecto a su valor en puntos, es decir, que podrán
+enfrentarse, si así lo desean los jugadores, y sobre todo, si así de
+valiente es el primer jugador, ejércitos de 1.000p contra
+3.000p. Luego, los jugadores deben ponerse de acuerdo para establecer
+quien será el jugador 1, y quién el jugador 2. Despues del despliegue,
+el jugador 1 será el que comienze la partida y luego el jugador 2 le seguirá.
+
+\subsection*{Configuración del escenario}
+\label{escenario}
+La elementos de escenografía a elegir, y su posición en el escenario
+es delimitada con las siguientes dos restricciones. La primera es que
+los elementos de escenografía no podrán situarse en la zona de
+despliegue, y la segunda es que dichos elementos no podrán tampoco
+estar a menos de 40u de dichas zonas de despliegue.
+
+Además, el terreno ocupado por los elementos de escenografía se considerará
+terreno impasable (es decir, que las unidades no podrás atravesar
+dicha zona). Respecto a si dificultará o no la visión de otras unidades,
+debería depender de la naturaleza del elemento de escenografía, pero se deja libertad a este efecto. 
+
+Una vez elegido la cantidad y el tipo de los elementos de
+escenografía, se colocarán antes del despliegue a través del escenario de forma aleatoria o
+decidida, pero siempre respetando las dos restricciones anteriomente impuestas.
+
+\subsection*{Turno de despliegue}
+\label{despliegue}
+Una vez acordados los ejércitos, comprobada su similitud en puntos, y
+su correcta planificación de despliegue, cada jugador coloca sus
+unidades correctamente en su zona de despliegue correspondiente, de
+modo que toda unidad de cada ejército esté encarada con la línea de
+batalla del ejército enemigo, y cuya esquina superior izquierda
+coincida con la planificada en el diseño del despliegue.
+
+El jugador segundo se encuentra ante una pequeña dificultad. Tal y
+como se comentó en el apartado de confección del despliege, ambos
+jugadores debieron suponer que serían el jugador primero. Como
+consecuencia, la colocación de sus unidades según sus coordenadas le
+llevará a colocarlas en la zona de despliegue del primer jugador. Para
+soslayar esta dificultad, solamente hay que desplegar al ejército
+segundo en la segunda zona de despliegue a partir de las coordenadas
+diseñadas para la zona de despliegue primera, bajo la siguiente
+regla: \[(x,y)=(1280 - x, 600 - y)\]
+
+De este modo, se obtendrá la situación simétrica del ejército del
+segundo jugador respecto a la zona de despliegue uno. Otra solución
+sería considerar momentáneamente a la esquina superior derecha del
+escenario como nuevo origen de coordenadas, y desplegar las tropas tal
+cual vienen especificadas en la propia lista de ejército. El efecto es
+equivalente.
+
+Al proceso de despliegue, y al tiempo transcurrido desde ese momento,
+hasta el comienzo del primer turno por el primer jugador, se le
+denominará turno de despliegue o turno 0.
+
+\section*{Turnos y fases de juego}
+\label{turnos}
+Una vez desplegados los ejércitos, puede comenzar la batalla. El
+esquema de partida es muy simple, el jugador primero comienza el turno
+primero, y realiza su fase de movimiento, y acto seguido, su fase de
+combate, para finalizar con su fase de disparo. Una vez terminado, el
+jugador segundo comienza su primer turno, y procede de la misma
+forma. Luego el jugador primero realiza su segundo turno, y así
+sucesivamente hasta que ambos jugadores hayan completado
+satisfactoriamente 6 turnos completos de juego. Acto seguido se
+calcula la categoría y dirección de la victoria, y finaliza la
+partida.
+
+Mas esquemáticamente, un turno de un jugador se divide en el siguiente
+juego de fases y subfases:
+\begin{itemize}
+\item Inicio de turno
+\item Fase de movimiento
+\begin{itemize}
+\item Declaración de cargas
+\item Movimiento de cargas
+\item Resto de movimientos
+\end{itemize}
+\item Fase de combate
+\begin{itemize}
+\item Resolución de combates
+\item Efecto de los combates
+\end{itemize}
+\item Fase de disparo
+\end{itemize}
+
+Se describirá cada fase mas concisamente en las secciones que vienen a
+continuación.
+
+\subsection*{Inicio de turno}
+\label{inicioturno}
+El inicio de turno no corresponde una fase por sí misma. Solamente es
+un espacio inicial de turno reservado para realizar ciertas acciones
+sobre las unidades que huyen \refreg{huidas}.
+
+En el inicio de turno se tiene que comprobar, para cada unidad del
+ejército cuyo turno esté en curso, si puede reagruparse. En caso de no
+conseguirlo, deberá continuar con su movimiento de huida \refreg{reagrupamiento}. El orden en
+que se resuelvan estas huidas no importa, y se realizan en cualquier
+orden deseado.
+
+\subsection*{Fase de movimiento}
+\label{fasemovimiento}
+En esta fase es en donde las unidades que no estén huyendo del
+ejército cuyo turno esté en curso podrán moverse libremente. Está
+compuesta por las siguientes subfases:
+
+\begin{itemize}
+\item Declaración de cargas
+\item Movimiento de cargas
+\item Resto de movimientos
+\end{itemize}
+
+\subsubsection*{Declaración de cargas}
+En esta subfase es donde las unidades pueden declarar sus cargas \refreg{dinamica}. Se
+declaran en un orden preciso que hay que anotar, ya que de este orden
+dependerá muchas de las acciones posteriores \refreg{declaracion}.
+
+\subsubsection*{Movimiento de cargas}
+En esta subfase se mueven todas las cargas en el mismo orden en que
+fueron delcaradas. Para mover una carga, hay primero que verificar si
+la unidad llegará a su objetivo. Luego, si efectivamente se verifica
+que la carga será posible, se efectúa la carga \refreg{cargar}. Si no, se efectúa un
+movimiento de carga fállida \refreg{cargafallida}.
+
+\subsubsection*{Resto de movimientos}
+En esta subfase es donde el usuario puede mover sus unidades, y en
+cualquier orden, de forma libre. Aquí las unidades podrán marchar
+\refreg{marcha} y realizar maniobras \refreg{maniobras}.
+
+\subsection*{Fase de combate}
+\label{fasecombate}
+Esta fase está diseñada para resolver los combates existentes en la
+partida desde turnos anteriores, o generados en la fase de movimiento
+gracias a nuevas cargas \refreg{combate}. Se divide en las siguientes dos subfases:
+
+\begin{itemize}
+\item Resolución de combates
+\item Efecto de los combates
+\end{itemize}
+
+\subsubsection*{Resolución de combates}
+La fase de resolución de combates es la fase donde se resuelven todos
+los combates existentes en la partida actual.
+
+Los combates deberán resolverse en el mismo orden relativo en el que
+fueron creados, según su antigüedad \refreg{ordencombates}. Cada
+combate se ejecuta según la iniciativa de cada una de las unidades involucradas, y de la
+antigüedad de sus participantes \refreg{resolucion}.
+
+Para cada combate, se anota su resultado según un criterio de
+puntuación, que luego se establecerán, nuevamente, en el mismo orden
+que los mismos combates fueron resueltos, en la subfase de efecto de
+los combates \refreg{resultadocombate}.
+
+\subsubsection*{Efecto de los combates}
+En esta subfase se generan los efectos de los combates. Se pueden
+identificar tres tipos de efectos: desmoralización, efectos mágicos y
+disolución de combates \refreg{resultadocombate}.
+
+La desmoralización es referida a las unidades que han perdido el
+combate, con su posible correspondiente huida \refreg{huidas}. Los efectos mágicos,
+referidas a los ganadores \refreg{magia}. La disolución de un combate es el hecho de
+que ese combate finalice. Si no lo hace, el combate queda vigente
+hasta la fase de combate del turno del siguiente jugador.
+
+\subsection*{Fase de disparo}
+\label{fasedisparo}
+En esta fase las unidades que posean armas de proyectiles podrán
+disparar a unidades enemigas \refreg{disparo}. El orden de los disparos es libre, y
+para cada unidad que decida disparar, los disparos y sus consecuencias
+se ejecutan inmediatamente a continuación. Luego, si se desea, una
+nueva unidad podrá disparar, y se efectuarán sus consecuencias antes
+de comenzar con una tercera unidad, y así tantas veces como se desee.
+
+\section*{Reglas de movimiento}
+\label{movimiento}
+En esta sección se presentan todas las reglas referidas al
+movimiento. El movimiento no solo está presente en la fase de
+movimiento, ya que, por ejemplo, el reagrupamiento pertenece a la
+dinámica del movimiento de las unidades en \gomf, sin embargo
+este movimiento se efectua en la fase de inicio de turno, y no en la
+fase de movimiento. Es por ello que en esta sección se explican las
+reglas \emph{generales} de movimiento, aplicables en distintas
+situaciones de una batalla.
+
+\subsection*{Movimiento}
+Moverse es el hecho de que una unidad cambie de posición en el
+escenario (por ejemplo, que pivote) o de estado de movimiento (por
+ejemplo, que su movimiento sea de marcha). Los desplazamientos o
+cambios de posición siempre tienen un coste, y éste se mide en
+unidades de terreno. El movimiento de una unidad viene dado, principalmente, por la
+capacidad M del guerrero. A mayor valor de atributo M mas se podrá
+mover la unidad en el terreno de juego en un solo turno. 
+
+El efecto de los desplazamientos o cambios de posición en una unidad
+es el siguiente. Si una unidad tiene una capacidad de desplazamiento
+Mx, y la unidad realiza un desplazamiento de coste u, a la unidad le
+quedarán x-u unidades de terreno para el siguiente turno. En la
+práctica, se considera que la capacidad dee desplazamiento de una
+unidad es un valor continuo en vez de discreto. Así, una unidad podrá
+desplazarse, si lo desea, 5.12u para que le resten 4.88u durante el
+resto del turno.
+
+Los movimientos de huida no están sujetas a estas restricciones, y
+tienen sus propias reglas de desplazamiento \refreg{huidas}. Éstas huidas deben
+desplazarse con independencia de lo que le reste de movimiento a la
+unidad en un turno.
+
+En general, la unidad se mueve en dirección frontal, es decir, que en
+el transcurso de movimiento no se debe variar el ángulo que hay entre
+la cara frontal del rango de ocupación y la linea de dirección en que
+se esté moviendo, que siempre deberá ser de 90º.
+
+¿Esto significa que las unidades solo pueden mover hacia delante?,
+sería descabellada tal absurdez. Para que una unidad pueda cambiar su
+encaramiento, o su ángulo de giro, hay ciertas maniobras que lo
+permiten. Así, por ejemplo, para que una unidad se quiera mover en una
+dirección de 45º con respecto a su posición frontal, deberá antes
+hacer un pivotaje de 45º y luego desplazarse frontalmente. Estos
+pivotajes y resto de maniobras pueden hacerse tanto como se deseen en
+el transcurso del movimiento \refreg{maniobras}.
+
+Y por último, una unidad que se mueva fuera del campo de batalla jamás
+volverá y representa el abandono total de la partida, por lo cual la
+unidad deberá considerarse baja a todos los efectos.
+
+\subsection*{Terreno}
+El terreno es el tipo de suelo que hay en cada parte del escenario. Hay dos tipos de terrenos: terreno abierto, y terreno impasable.
+
+\subsubsection*{Terreno abierto}
+Es el terreno común y normal del juego, y las unidades tendrán un movimiento libre regido por las normas habituales de movimiento del juego (las regidas en esta sección del manual).
+
+\subsubsection*{Terreno impasable}
+En un terreno impasable, las unidades, directamente, no podrán pasar y
+se consideran obstáculos a todos los efectos. Estos terrenos deben ser
+bordeados y nunca se podrán atravesar. Los únicos terrenos impasables
+corresponden, en concreto, a todos los elementos de escenografía
+situados en el escenario.
+
+\subsection*{Espacio entre unidades}
+\label{espacio}
+Es importante recalcar que a toda unidad debe respetarse el rango de
+ocupación de cada uno de esos efectivos. Así, durante el movimiento, y
+en general bajo cualquier situación, menos en un combate, toda unidad
+debe esquivar a las restantes, porque eso se reduciría a colisionar o traspasar rangos de
+ocupación durante el movimiento.
+
+Hace falta mencionar una regla importante que siempre, y para esto no
+hay excepción posible, debe respetarse entre unidades de distintos
+bandos. Para que dos unidades se consideren trabadas en combate hemos
+dicho que antes hay que declararles carga y luego cargar. Por eso
+ninguna unidad puede acercarse demasiado a una unidad enemiga, ya que
+si llegan a tocarse, deben luchar (es ilógico e irreal que dos
+enemigos estén uno frente al otro y no combatan), y esto solo es
+posible hacerse si se declara una carga. Así que es norma que dos
+unidades enemigas entre sí siempre deban de estar separadas como
+mínimo, a no ser que sea para combatir, una distancia de 10u. Para
+unificar el criterio, y como dos unidades, por cuestiones de
+maniobrabilidad, tampoco pueden estar juntas, se impondrá que dos
+unidades amigas también respeten esta distancia.
+
+\subsection*{Maniobras}
+\label{maniobras}
+Las maniobras son los movimientos de desplazamiento voluntario
+característicos de la subfase de resto de movimiento. Existen tres
+tipos de maniobras: desplazamiento, pivotaje y giro.
+
+Para poder realizar una maniobra, la unidad debe estar completamente
+libre, es decir, no debe estar huyendo ni trabada en combate.
+
+\subsubsection*{Desplazamiento}
+\label{desplazamiento}
+Desplazamiento es el hecho de que una unidad cambie su posición a base
+de mover hacia delante, sin cambiar su ángulo con respecto al eje x
+del escenario. Es decir, siguiendo una dirección perpendicular hacia
+delante.
+
+El coste de este movimiento es, precisamente, la distancia que hay
+entre los frentes de la posición actual de la unidad, y la nueva. Una
+unidad nunca podrá desplazarse una distancia mayor que la restante por
+su capacidad de movimiento, es decir, según su atributo de movimiento
+menos la distancia ya recorrida o gastada por otras maniobras en el
+mismo turno.
+
+\subsubsection*{Pivotaje}
+\label{pivotaje}
+Pivotar una unidad es cambiar su encaramiento. Para pivotar una unidad
+hay dos posibilidades, bien pivotarla a la derecha (para mirar al
+este), bien pivotarla a la izquierda (para mirar al oeste), todo
+depende del eje escogido. Si se coge como eje el pivote superior
+izquierdo de la unidad, el pivotaje será izquierdo (se mantiene fijo
+ese eje y se mueve la unidad como un compás). Y recíprocamente para el
+pivotaje derecho con eje derecho.
+
+Un pivotaje izquierdo consume un movimiento igual al recorrido por el
+último efectivo de la linea frontal de la unidad, es decir, el situado
+en la esquina superior derecha. Un pivotaje derecho consume un
+movimiento igual al recorrido por primer efectivo de la linea frontal
+de la unidad, es decir, el situado en la esquina superior
+izquierda. En ambos casos, dicho recorrido es igual a la longitud del
+arco realizado por el efectivo indicado en cada caso. Esto quiere
+decir que si una unidad con M20 y un frente de 5 efectivos mueve 10u,
+y se realiza un pivotaje derecho donde el efectivo quinto se desplaza
+5u, a la unidad completa le quedarán otros 5u para completar, si lo
+desea, su movimiento, bien desplazándose frontalmente, bien con otra
+maniobra como un nuevo pivotaje. Cabe destacar que contra mas ancha
+sea la unidad (mas efectivos existan en el frente), mas costoso será
+su giro para un mismo ángulo, pues se recorrerá un arco mayor.
+
+\subsubsection*{Giro}
+\label{giro}
+Un giro no desplaza realmente a la unidad, aunque sí que consume
+movimiento. Un giro es simplemente cambiar el frente de la unidad a su
+retaguarda. Si la unidad miraba al frente (no puede mirar a otro sitio), la unidad
+ahora puede girar para que su retaguardia sea su nuevo
+frente. Los efectivos no se mueven, solamente se giran.
+
+Al girar la unidad, su última fila será su nuevo frente. Si la última
+fila no estaba completa, se completa usando efectivos de la primera
+fila, de modo que, al girar la unidad, la nueva última fila (la que
+antes era el frente) tenga a sus efectivos en la misma
+posición relativa que los efectivos de la última fila antes del
+giro. Lo importante es mantener a la formación de la unidad sin modificaciones.
+
+Una unidad solo podrá girar si no está marchando, y una vez girada, no
+podrá marchar en lo que queda de turno.
+
+\subsection*{Movimiento de marcha}
+\label{marcha}
+El movimiento de marcha representa un movimiento a la carrera, que
+incrementa temporalmente el atributo M (solamente para ese turno de
+movimiento). El movimiento de marcha de una unidad es el doble de su
+capacidad de movimiento actual. Además, como ya se ha dicho, una unidad que
+haya girado no podrá marchar en su fase de movimiento, o una unidad
+que esté marchado no podrá girar en lo que quede del mismo.
+
+A su vez, si la unidad ha marchado, en la fase de disparo tendrá
+penalizaciones en sus disparos de la fase de disparo, si es que llega
+a realizar alguno.
+
+\subsection*{Dinámica de cargas}
+\label{dinamica}
+Las cargas son el único mecanismo posible para que varias unidades
+puedan entablar combate \refreg{combate}. Poseen dos subfases correspondientes para
+declararlas y ejecutarlas en la fase de movimiento, y por cada carga
+realizada con éxito se enriquecerá posteriormente la fase de combate.
+
+\subsubsection*{Declaración de cargas}
+\label{declaracion}
+La declaración de la carga es tan fácil como indicarle a un oponente
+que deseas cargar. Solo se puede declarar una carga a una unidad
+visible \refreg{visibilidad}. Estas declaraciones se hacen en su subfase de
+movimiento correspondiente \refreg{fasemovimiento}.
+
+Antes de declarar carga no se permite medir el terreno de juego y en
+\gom no hay ningún medio para hacerlo. Se debe ponderar a ojo si se cree
+que la unidad llegará a cargar o si por el contrario fallará la
+carga. Una unidad que desea cargar puede declarar carga a una sola
+unidad, aunque una unidad enemiga puede ser objetivo de varias
+unidades, que se establecerán en declaraciones independientes.
+
+Es importante ser cuidadoso ponderando el éxito de carga de tu unidad,
+pues un error de cálculo puede hacer que la carga sea fállida
+\refreg{cargafallida} y colocar a tu unidad en una situación poco
+ventajosa.
+
+Por último, solo pueden declarar carga aquellas unidades que no estén
+combatiendo ni huyendo, y si una unidad declara carga, no podrá
+realizar ninguna acción mas durante el resto de su turno, salvo disparar.
+
+\subsubsection*{Movimiento de la carga}
+\label{cargar}
+En la subfase de movimiento de cargas se intenta establecer, por cada
+declaración realizada y respetando el mismo orden, si cada unidad,
+gracias a su movimiento, llega a su objetivo. La cantidad de movimiento
+disponible para cada unidad que carga es del doble de su atributo
+actual M. Dos o mas unidades que declaren una carga contra
+una misma unidad, deberán resolver sus movimientos en el mismo orden,
+con la posibilidad de que el movimiento de la primera carga (que
+intentará maximizar su posición, véase mas abajo), podrá impedir el
+éxito de la segunda. Se recomienda que solo se declaren varias cargas
+a una misma unidad cuando haya espacio suficiente para todos.
+
+Por ejemplo, que haya tantos \emph{flancos} libres (en sentido general, es
+decir, incluyendo frente y retaguardia) como cargas quieran
+declararse; es por ello que mas de cuatro cargas contra una misma
+unidad es desaconsejable, a no ser que la unidad enemiga sea muy
+grande y haya el suficiente espacio.
+
+Por otro lado, es importante resaltar que no se puede elegir el flanco
+al que se desea cargar, solamente se declara la unidad a la que
+atacar. Para establecer si la unidad llega al objetivo y de qué forma
+se sigue el método presentado a continuación.
+
+Solo puede cargarse a los flancos que estén \emph{delante} de la línea
+característica de visión \refreg{visibilidad}. De entre esos
+flancos, siempre hay que calcular en qué posición se traba mas
+efectivos, siempre y cuando se llege a esa posición. Dicho de otro
+modo, de entre todas las posiciones a la que la unidad puede cargar,
+se elige la que maximice el número de efectivos que se trabarán en
+combate \refreg{efectivoscombatientes}. Evidentemente, en ese caso debe
+violarse la condición de la separación entre unidades, pues dos
+unidades solo están trabadas cuando están en contacto.
+
+A la posición final (el segmento) donde la unidad de carga se ha alineado con la
+unidad enemiga la llamaremos posición de carga. Es inmediato que el
+tamaño de este segmento es el del frente de la unidad. Para saber si una
+unidad \emph{llega} a una posición de carga, se traza una recta desde
+el centro del frente de la unidad al centro de la posición de
+carga. Si el tamaño de este segmento es menor que el movimiento
+disponible de carga, la unidad llega a dicha posición, de lo
+contrario, si esa posición de carga es la única posible, la carga será
+fállida \refreg{cargafallida}. Si no es la única posible, hay que buscar otra.
+
+Tampoco será válida una posición de carga si el espacio que existe
+entre el frente de la unidad y la posición de carga está ocupado,
+aunque sea parcialmente. Esto se reduce a considerar un cuadrilatero
+formado tras unir los extremos de los segmentos frente y posición de carga, y verificar que dicho espacio
+esté completamente libre.
+
+De entre todas las posibles
+posiciones de carga, hay que buscar la que trabe en combate el máximo
+número de efectivos. Esto se hace sumando el número de efectivos
+trabados para cada unidad, y no solo para la unidad que ha
+cargado. Por ejemplo, si la unidad objetivo tiene efectivos con un
+RO muy ancho en su eje x, pero poco profundo en su eje y, será mas
+óptima la carga por su flanco puesto que la suma en bruto de efectivos trabados
+será mayor.
+
+\subsubsection*{Carga fállida}
+\label{cargafallida}
+Si la carga ha sido fállida, el movimiento a realizar se considera un
+movimiento obligatorio. Este movimiento se ejecuta en el mismo momento
+en que se sepa que no existe ninguna posición de carga efectiva, es
+decir, justo antes de validar el movimiento de la siguiente carga,
+respetando el orden de las declaraciones.
+
+Cuando una carga es fállida, se debe realizar un movimiento como
+máximo igual al tercio del movimiento de carga, de forma rectilinea (es decir, un
+movimiento hacia adelante). Si el espacio que la unidad tiene delante
+está ocupado, se desplazará hasta la posición máxima sin violar la
+separación entre unidades \refreg{espacio}.
+
+\subsection*{Huidas}
+\label{huidas}
+Huir es el hecho de que una unidad se vea envuelta en el pánico y
+decida abandonar el combate. Los movimientos de huida se realizan en
+ciertas ocasiones en las que la situación se ha vuelto peligrosa para
+la misma. En esta sección se regulan las reglas acerca de qué
+situaciones son las que ocasionan ``peligro'' para la unidad, y como
+se han de desplazar esas huidas.
+
+\subsubsection*{Unidades que huyen}
+\label{unidadhuye}
+Las situaciones en las que una unidad está sustenta a huir son las siguientes:
+
+\begin{enumerate}
+\item Cuando una unidad comenzó a huir en turnos anteriores y todavía
+  no se ha reagrupado \refreg{inicioturno}.
+\item Cuado la unidad es desmoralizada en combate. Su movimiento de
+  huida se realiza en la subfase de efectos del combate, dentro de la
+  fase de combate \refreg{fasecombate}.
+\item Cuando la unidad pierde mas de un 25\% de sus efectivos en la
+  fase de disparo enemiga \refreg{fasedisparo}.
+\end{enumerate}
+
+Las unidades que estén en las dos primeras situaciones, deberán
+realizar un chequeo de liderazgo antes de ver si efectivamente se
+declaran como unidades que huyen. Si se falla este chequeo, la unidad
+realizará su movimiento de huida \refreg{huidas}. A partir
+de entonces (tercer caso), en el siguiente \emph{inicio del turno} de su jugador, tendrá que realizar
+otro movimiento de huida, a no ser que se reagrupen \refreg{reagrupamiento}.
+
+En el caso de que deban huir por desmoralización en combate, para
+realizar el chequeo de liderazgo, existen unos modificadores al
+liderazgo antes de realizar el chequeo \refreg{resultadocombate}.
+
+Cuando una unidad huye, hay cierta probabilidad de que sus atributos
+sean modificados (negativamente), por efecto de la magia \refreg{magia}.
+
+\subsubsection*{Movimiento de huida}
+\label{movimiento de huida}
+El movimiento de huida depende básicamente de la capacidad de
+movimiento básico de la unidad que huye. Esta cantidad de movimiento
+de huida es aleatorio en cada turno de huida. Si la capacidad de
+movimiento de una unidad es M, su movimiento de huida en el turno
+actual es la media de la suma de tres resultados aleatorios
+comprendidos entre la mitad de n y su triple. Por ejemplo, si la
+capacidad de movimiento de una unidad es de 10, y está huyendo, tres
+resultados aleatorios posibles entre 5 (mitad) y 30 (triple) son 7,
+16, 22, y la media de esas tres cantidades es 15, así que ese turno
+moverá 15. Esto pondera el hecho de que en un movimiento de huida,
+este es desorganizado, sin formación y sustento a tropiezos, caídas,
+cansancio (que pueden disminuir la velocidad de la huida), o pánico
+excesivo (que pueden aumentarla), además fomenta el hecho de que la
+huida no es controlable por el jugador.
+
+En un movimiento de huida, la unidad que huye intentará por todos los
+medios escapar de la situación que le produce peligro. La dirección
+del movimiento de huida siempre es en el sentido opuesto a la unidad
+que le produce peligro. Si debe huir por motivo de los disparos,
+huirá en dirección contraria a dicha unidad. Si es por motivos de un
+combate, huirá de la unidad de mayor potencia de entre todas las
+unidades enemigas que participen en el mismo combate. Si la huida no
+ha sido recién lanzada (es decir, que es del tercer tipo de entre los
+anunciados en el apartado anterior), el movimiento de huida continuará
+la misma dirección que en los turnos anteriores. En la siguiente
+sección se explica el método usado para elegir la dirección y el
+comienzo del movimiento de huida.
+
+Si en el movimiento de huida se encuentra a otra unidad, pasará por
+encima suya sin modificar su dirección. Si el valor obtenido en su movimiento de huida no
+es lo suficientemente alto como para saltar completamente a la unidad,
+se otorga la bonificación necesaria para traspasarlo. Si justo detrás
+de esa unidad existen otras unidades, se otorga la bonificación
+necesaria al movimiento hasta encontrar la primera posición, en la
+misma dirección de huida, donde la unidad quepa completamente sin
+violar las restricciones de cercanía a otras unidades (10u). Si el
+elemento es de escenografía, se aplican los mismos criterios.
+
+Si la unidad por la que ha pasado es amiga, ésta unidad realizará un
+chequeo de liderazgo. Si lo falla, deberá huir en dirección contraria
+a la unidad que le provoca el pánico, es decir, en dirección contraria
+a dicha unidad. Si es enemiga, la unidad que huye perderá la mitad de
+los efectivos de su unidad.
+
+\subsubsection*{Dirección del movimiento de huida}
+\label{direccionhuida}
+Para establecer la dirección del movimiento de huida en las
+situaciones de lanzamiento del pánico (situaciones 1 y 2), primero se
+considera que la última fila de ambas unidades está completa, para
+obtener un rectángulo. Luego se dibuja una recta que se diriga desde
+el centro del rectángulo \emph{enemigo} al centro del rectángulo de la
+unidad que va a huir. La dirección de esta recta será la dirección de huida.
+
+Luego la unidad de huida gira sobre su centro hasta que su frente sea
+perpendicular a dicha recta imaginaria; y de las dos posiciones en las
+que esto es posible (podemos girar a la derecha hasta conseguir, o
+girar a la izquierda hasta conseguirlo), elegimos la tenga la
+retaguardia de la unidad que huye mas cerca del enemigo. De este modo,
+al desplazarse la unidad que huye linealmente, se consigue que lo haga alejándose del
+enemigo y a su vez respetando la dirección de huida.
+
+\subsection*{Reagrupamiento}
+\label{reagrupamiento}
+Reagruparse es el hecho de que una unidad detenga su movimiento de
+huida y se disponga a participar de nuevo en el combate. El
+reagrupamiento se calcula solamente al \emph{inicio del turno}, para
+todas las unidades que estén huyendo del jugador cuyo turno está en
+curso \refreg{inicioturno}.
+
+Para ver si una unidad se reagrupa, basta con hacer un chequeo
+individual del liderazgo de la unidad. Si se supera el chequeo, la
+unidad se reagrupara, y ese turno no huirá, quedándose en la misma
+posición en la que estaba, pero ahora pudiendose declarar cargar,
+efectuar maniobras o ejecutar disparos.
+
+Si el chequeo es fallado, se procede a ejecutar un nuevo movimiento de
+huida junto a sus efectos mágicos, tal y como indican las reglas presentadas arriba.
+
+
+\section*{Reglas de combate}
+\label{combate}
+En esta fase es donde se resuelven los combates de las unidades que
+estén trabadas en combate. Un combate es una agrupación de unidades
+en contacto, aunque no necesariamente todas entre sí. Por ejemplo, una
+serie de unidades trabadas en combate una detrás de otra, en linea, es
+un solo combate, aunque la última unidad no esté combatiendo con la
+primera.
+
+\subsection*{Orden de los combates}
+\label{ordencombates}
+Los combates se resuelven por orden de antigüedad. El combate que más
+turnos lleve es el combate que primero se resuelve. Todo combate que
+se haya creado en un mismo turno (por ejemplo, porque ha sido en este turno
+donde se ha declarado y efectuado la carga), se resuelve por orden
+de declaración de la carga, es decir, primero se resuelve el combate
+que sea consecuencia de una declaración mas antigua. Si dos combates
+son igual de antiguos, se resolverán en el mismo orden en que fueron
+resueltos el turno en que comenzaron.
+
+\subsection*{Resolución de un combate}
+\label{resolucion}
+Una vez reconocido el orden de los combates, se procede a la
+resolución en orden de cada uno de ellos. El orden de la resolución es
+el siguiente:
+\begin{enumerate}
+\item Atacan las unidades que hayan entrado al combate en este turno,
+  es decir, que hayan cargado en este turno, en el mismo orden en que
+  cargaron \refreg{fasemovimiento}.
+\item Entre las unidades que lleven mas de un turno combatiendo, sus
+  ataques se resuelven por orden de iniciativa. Si dos unidades tienen
+  una misma iniciativa, efectúa sus ataques primero la unidad que
+  efectúo su carga primero (es decir, el que lleve mas turnos en el
+  combate, o si entraron en el mismo turno, el que declaró su carga primero).
+\item Se calcula el resultado final del combate \refreg{resultadocombate}.
+\item El perdedor se desmoralizará, y acto seguido las unidades
+  perdedoras en el combate realizarán un chequeo de liderazgo en el
+  mismo orden en que atacaron.
+\item Las unidades que fallen dicho chequeo huirán en la subfase de
+  efectos de los combates \refreg{fasecombate}, en el mismo orden en que fallaron su
+  chequeo.
+\end{enumerate}
+
+\subsection*{Efectivos combatientes}
+\label{efectivoscombatientes}
+Que dos unidades estén trabadas no significa que todos sus efectivos
+lo estén. Siempre existe una linea de batalla y en ésta es donde se
+define quién puede y quién no puede combatir. En general, para que dos
+efectivos se consideren trabados en combate, sus rangos de ocupación
+deben ser tangentes entre sí, es decir, que estén chocándose
+literalmente los unos con los otros. Una unidad estará trabada a otra
+incluso si su único punto de contacto es vértice con vértice entre sus
+rangos de ocupación.
+
+\subsection*{Ataques de los bandos}
+\label{ataques}
+A la hora de declarar los ataques, hay que asignarlos entre todas las
+unidades contra la que cada efectivo esté trabado en combate cuerpo a
+cuerpo. Si un efectivo solo está en contacto con una sola unidad
+enemiga, todos sus ataques se asignarán automáticamente a ella. Si hay
+mas de una, el usuario debe decidir como repartir los ataques de cada
+efectivo para cada unidad enemiga con la que esté en contacto.
+
+Para resolver un ataque, se procede de la siguiente forma: se realiza
+un chequeo comparativo del HA de los atacantes. El HA del agresor será
+el atributo activo, y el del agredido, el atributo pasivo. Luego, se
+procede de la misma forma con los atributos fuerza del agresor, y
+resistencia del efectivo. Por último, se hace un chequeo de SA del
+efectivo defensor. El atributo SA es modificado en tantos puntos como
+supere la fuerza del atacante a cuatro. Es decir, si la fuerza del
+atacante es 6, y la SA por armadura del defensor es 4, el chequeo de
+SA se realiza considerando un SA de 4 - (6 - 4) = 2.
+
+La unidad enemiga pierde tantas heridas como ataques realizados con
+éxito. Estas heridas, al igual que en la fase de disparo, se reparten
+por orden entre sus efectivos, y no de forma repartida. Es decir, si
+una unidad tiene 20 efectivos, y su atributo H es 2, se deberá
+eliminar un efectivo cada vez que la unidad contabilice dos heridas
+menos. No se puede quitar una sola herida a distintos efectivos para
+hacer que la unidad pierda sus heridas de modo que no pierda
+efectivos, y de ahí la mención al \emph{retiro en orden} de los
+efectivos, según las heridas perdidas en la unidad.
+
+Si en un combate, el número de heridas totales es mayor que el número
+de heridas de la unidad, a parte de que habrá que eliminar a todos los
+efectivos, las heridas restantes siguen contabilizando para el
+resultado del combate final. Hace falta recordar para esto que, aunque una unidad haya
+desaparecido, pueden existen mas unidades en el mismo combate. Si el
+combate era formado solo por dos unidades, la atacante y la agresora,
+y una de las unidades desaparece, evidentemente no habrá que
+contabilizar estas heridas adicionales porque ya no hay ningún combate
+que resolver.
+
+Si una unidad pertenece a un combate, pero solo estaba trabado con una
+de las unidades del mismo, y esta unidad es aniquilada, la unidad ya
+no pertenecerá al combate, aunque habrá que esperar a que este combate
+se resuelva y se midan y ejecuten sus efectos para desligar a la
+dicha unidad del mismo.
+
+Luego toca la respuesta del enemigo. Obviamente, si se realizan 6
+heridas, y el frente enemigo tiene solo 5, todos han muerto en este
+turno, e incluso ha muerto uno de la segunda fila. Como solamente la
+primera fila responde (por ser los únicos que estaban trabados en
+combate al inicio del combate), la unidad enemiga se quedaría sin
+atacar. Es decir, que el número de bajas que haya recibido la unidad
+se considera que se eliminan del frente de batalla (porque aquí es
+donde las unidades están trabadas) aunque luego en la partida se
+eliminen de la última fila de la unidad.
+
+Una vez visto cuantos efectivos de la unidad enemiga pueden atacar, se
+resuelven los ataques del mismo modo en que se resolvieron los ataques
+de la unidad que atacó primero, y se contabilizan todas las heridas
+producidas, y se retiran las bajas convenientes. Y continúa el combate
+por la siguiente unidad siguiendo el orden impuesto de resolución de combates.
+
+\subsection*{Resultado del combate}
+\label{resultadocombate}
+El resultado del combate se calcula de la siguiente forma:
+\begin{enumerate}
+\item Para cada bando se anotan las heridas realizadas.
+\item Para cada bando, se anotan el número de filas de cada una de las
+  unidades presentes en el combate.
+\item Para cada bando se anotan el número de unidades situadas por alguno de los flancos de cualquier unidad enemiga presente en el combate.
+\item Se anota y se multiplica por dos el número de unidades situadas en la retaguardia de cualquier unidad enemiga presente en el combate.
+\item Recibe un punto adicional el bando con más potencia total sumada de las unidades implicadas en el combate.
+\end{enumerate}
+
+El jugador que haya acumulado mas puntos mediante estas reglas se
+considerará ganador del combate. El bando perdedor deberá realizar un
+chequeo de desmoralización por cada unidad participante en el combate,
+con una penalización al liderazgo igual al número de puntos por el que
+ha perdido el combate. Si sucede un empate, no se realiza tal chequeo
+y el combate continúa en el siguiente turno de juego. Si algunas
+unidades fallan el chequeo, se anotan estas huidas y continúa la
+resolución del siguiente combate. Cuando se resuelvan todas, se pasa a
+la subfase de efectos de los combates, y las unidades huyen en el
+mismo orden en que dichas huidas se calcularon. Si todas las unidades de un
+mismo bando en un combate han huido o han sido aniquilidas, la batalla se
+dará por finalizada.
+
+Las unidades combatientes podrán ver incrementado los valores en sus
+atributos tal y como describen las reglas referentes a la magia (véase
+sección correspondiente).
+
+\section*{Reglas de disparo}
+\label{disparo}
+La fase de disparo es la fase en la que las unidades que posean armas
+de proyectiles podrán disparar.
+
+Al comentar la fase, el jugador en turno puede elegir disparar a una
+unidad enemiga. La única restricción es que la unidad objetivo esté
+visible. Cualquier unidad que posea un arma de proyectiles, y además un HP superior a 0,
+podrá disparar.
+
+El proceso es el siguiente:
+\begin{enumerate}
+\item El usuario elige una unidad que posea armas de proyectiles y
+  tenga un hp superior a 0.
+\item Luego, se elige a qué unidad desea disparar, con la única
+  condición de que esta unidad esté visible \refreg{visibilidad} y no
+  esté combatiendo.
+\item La unidad dispara, según las reglas mencionadas a continuación.
+\item Se efectúa acto seguido los posibles efectos de los disparos.
+\item Si el jugador en turno lo desea, puede elegir otra unidad para disparar.
+\end{enumerate}
+
+\subsection*{Armas de proyectiles}
+\label{armas}
+Las armas de proyectiles no son enunciadas explícitamente entre los
+atributos y características del juego. Solo tenemos de ellas la fuerza
+del arma y el alcance de los proyectiles. Se considerará que una
+unidad posee armas de proyectiles si su FA y su AA es superior a 0.
+
+Es absurdo que exista una unidad cuyo perfil de atributos tenga una FA
+superior a 0 y un AA 0, o viceversa. Pero debido a los efectos de la
+magia que pueden modificar cualquier atributo, la fuerza del arma,
+por ejemplo, puede reducirse a 0. O una unidad que no posee armas
+puede incrementar su FA o AA. En estos casos, si la suerte acompaña a
+las unidades y su FA y también su AA se hace mayor que cero, se
+considerará que la unidad a adquirido un arma.
+
+Evidentemente, una unidad que no está diseñada para disparar, lo mas
+probable es que posea un HP 0, por lo que, aunque obtenga un arma, no
+sabrá dispararla. Necesitará, por tanto, que los efectos mágicos le
+incrementen su HP a 1, además de su FA y AA (que inicialmente será 0),
+y entonces la unidad pasará a conseguir proyectiles.
+
+\subsection*{Resolución de los disparos}
+\label{resoluciondisparos}
+Una unidad, para poder disparar, necesita ver a su objetivo. Para ello
+se siguen las reglas de visibilidad entre unidades \refreg{visibilidad}. Además, una vez
+declarado un objetivo, para que el disparo sea efectivo, hace falta
+que la distancia que separa los centros de ambas unidades no sea mayor
+al alcance del arma.
+
+Para calcular la distancia que separa a dos unidades se procede como
+habitualmente. Se considera que sus últimas filas están completas, se
+toman los centros de ambas unidades, y luego se mira la distancia
+del segmento que conectaría ambos centros. Si este tamaño es mayor que
+el alcance del arma, el disparo no se hará efectivo y no ocurrirá
+nada.
+
+Si el disparo sí que es efectivo, se resuelven los ataques. Se hace de
+forma parecida a como se resolvían los combates. En concreto, de la
+siguiente forma:
+
+\begin{itemize}
+\item Se hace un chequeo individual del HP de la unidad atacante.
+\item Para cada disparo que supere el primer chequeo, se realiza un
+  chequeo comparativo entre la fuerza del arma y la
+  resistencia de la unidad objetivo.
+\item Se hace un chequeo individual de la SA por la unidad objetivo,
+  para cada disparo que supere el chequeo anterior.
+\item Se generan tantas heridas en la unidad objetivo como disparos
+  superen el último chequeo.
+\end{itemize}
+
+A la hora de hacer estos chequeos, existen ciertas
+modificaciones a los atributos implicados:
+\begin{itemize}
+\item Si el objetivo se encuentra a más de la mitad del alcance del
+  arma, se reduce el HP y la FA en una unidad.
+\item Si el objetivo se encuentra a menos de la mitad de un cuarto del
+  alcance del arma, se incrementa el HP y la FA en una unidad.
+\item Si la unidad ha marchado en su turno de movimiento, se reduce el
+  HP en una unidad.
+\item Si la fuerza del arma es mayor que 4, la SA del enemigo se
+  reduce en tantos puntos como FA supere a 4 (al igual que en la fase
+  de combate).
+\end{itemize}
+
+\subsection*{Efectos de los disparos}
+\label{efectosdisparos}
+Una vez se resuelva el número de heridas realizadas en los disparos,
+se deben calcular sus efectos.
+
+Si el número de bajas realizadas (de efectivos retirados) es mayor al 25\% del número de
+efectivos presentes en la unidad objetivo antes de los disparos, la
+unidad objetivo de los disparos debe realizar un chequeo de
+liderazgo. Si lo falla, deberá huir inmediatamente y antes de elegir
+la siguiente unidad a disparar, o antes de realizar cualquier otra
+acción, en dirección contraria a la unidad
+que ha disparado \refreg{huidas}. Si la unidad objetivo de los
+disparos ya estaba huyendo, no huirá
+de nuevo y omitirá el chequeo de liderazgo.
+
+Además, si el número de bajas realizas es, como ya hemos dicho, mayor
+al 25\% de los efectivos de la unidad, la unidad atacante recibirá
+bonificación mágica a sus atributos, como se expone a continuación.
+
+\section*{Reglas de magia}
+\label{magia}
+La magia en \gom es exclusivamente referida a la modificación de
+atributos. Estos atributos son modificados en tres situaciones
+diferentes: durante un movimiento de huida (no importa si antes o
+después), tras la victoria en un
+combate, y tras efectuar mas de un 25\% de bajas a una unidad a la que
+se ha disparado.
+
+En cada una de estas tres situaciones se procede de la misma forma:
+primero se escoge un atributo o característica de forma aleatoria,
+salvo la puntuación y el rango de ocupación, que no serán
+modificables.
+
+Luego, se escoge un número de 0 a 3 que pondera la probabilidad de que
+ese atributo cambie. Si la probabilidad es 0, el atributo no será
+modificado. Si es 1 o 2, se modificará un punto. Si es 4, se
+modificará dos. En realidad, el hecho de escoger un número entre 0 y 3
+no es importante, lo que importa es que al hecho de no modificar el
+atributo le corresponda una probabilidad del 25\%, al hecho de
+modificarlo un solo punto el 50 (el más probable), y al hecho de
+modificarlo en dos puntos, el 25\% restante. Se puede escoger
+cualquier método que respete esta probabilidad.
+
+Si los atributos elegidos son la capacidad de movimiento o el alcance,
+el atributo será modificado en la cantidad de punto obtenido en el
+paso anterior, pero multiplicando este valor por 10. Eso significa que
+si hemos de modificar el movimiento en un punto, lo que haremos es
+incrementar M en 10u. Si hemos de modificarlo en 2, lo incrementaremos
+20u. Para el caso del alcance del arma se procede de la misma forma.
+
+En el caso de que la unidad esté huyendo, estos efectos son
+penalizadores en vez de bonificadores, es decir, que el valor obtenido
+es la cantidad de puntos que deben restarse al atributo o
+característica elegida aleatoriamente.
+
+Esta clase de efectos mágicos ilustran a la magia como una entidad
+presente en el campo de batalla que provoca efectos deseosos en las
+unidades fuertes y valientes, y efectos perniciosos en las unidades
+débiles y cobardes. Y como ya hemos dicho, incluso pueden otorgar
+\emph{armas de proyectiles} a las unidades si estas han sido lo
+suficientemente buenas durante el transcurso de la batalla.
+
+\section*{Fin de la partida}
+\label{finpartida}
+\subsection*{Obtención de puntos}
+\label{puntos}
+Una vez que la partida acaba, tras seis turnos de juego, se contabiliza el resultado final para evaluar quién gana y quién pierde. Los puntos a obtener son los siguientes:
+\begin{enumerate}
+\item Cada jugador obtiene tantos puntos como puntos valgan todas las
+  unidades de su ejército que aún estén presentes en el escenario en
+  el campo de batalla, que no estén huyendo, y además que su potencia
+  sea superior a 5.
+\item Si una unidad ha perdido mas de la mitad de sus efectivos
+  iniciales al comienzo de la batalla, se contabilizan solo la mitad de sus puntos.
+\item Se divide el tablero en 4 cuadrantes iguales. Por cada
+  cuadrante, se contabiliza la potencia total de unidades presentes en
+  ese cuadrante, para cada bando. Por cada cuadrante, el ejército que
+  tenga mas potencia de unidad en dicho cuadrante, obtiene 100 puntos
+  adicionales.
+\end{enumerate}
+
+\subsection*{Tipos de victorias}
+\label{victorias}
+No siempre se gana de la misma forma, hay veces que se puede haber
+ganado por una diferencia justa, o haber ganado
+abrumadoramente. Primero, al bando que haya obtenido un número mayor
+de puntos se le resta el que haya obtenido un número menor, y a partir
+de este valor (llamado valor de victoria) se pueden obtener 4 tipos
+distintos de resultados en la partida:
+\subsubsection*{Masacre}
+Una victoria será masacre cuando el valor de victoria sea mayor o
+igual al
+doble de los puntos contabilizados al ejército perdedor. Es decir, que
+si los dos ejércitos han conseguido respectivamente 460 y 100 puntos,
+el valor de victoria será de 360, y 360 es un valor mayor que el doble
+de 100. El primer ejército, por tanto, habrá masacrado al segundo.
+
+\subsubsection*{Victoria decisiva}
+Una victoria será decisiva cuando el valor de victoria sea mayor o
+igual a los puntos conseguidos por el ejército perdedor, sin llegar a
+ser masacre. Por ejemplo, si los dos ejércitos han conseguido
+respectivamente 460 y 200, la victoria será decisiva, porque el valor
+de victoria será de 260, y 260 es mayor que 200 pero no mayor a su
+doble, que es 400.
+
+\subsubsection*{Victoria marginal}
+Una victoria será marginal cuando el valor de victoria sea mayor o
+igual a la mitad de los puntos conseguidos por el ejército perdedor,
+sin llegar a ser victoria decisiva. Por ejemplo, si los dos ejércitos
+han conseguido respectivamente 460 y 300, la victoria será marginal,
+porque el valor de victoria es de 160 puntos, y 160 es mayor que 150,
+que es su mitad, pero no mayor que 300, que es su valor en puntos de
+batalla, y es por ello que no llega a ser victoria decisiva (aunque solo por
+una diferencia de 10 puntos).
+
+\subsubsection*{Empate}
+Una partida queda empatada si no estamos en ninguna de las situaciones
+anteriores. Es decir, cuando el valor de victoria sea 0, o el ganador
+tenga un valor de victoria menor que la mitad que la puntuación del
+perdedor. Por ejemplo, si los dos ejércitos han conseguido
+respectivamente 460 y 360 puntos, el valor de victoria será de 100
+puntos para el primer ejército, y la partida se considerará acabada en
+empate, ya que 100 es menor que 180, que es el valor en puntos del
+ejército ``perdedor''.
+
+\section*{Listas de ejército}
+En esta sección se incluirán los perfiles de atributos que configuran
+a las nueve unidades de ambas razas: humanos y orcos.
+
+Los perfiles de atributos se muestran en forma de tabla nemónica, cuya
+leyenda es la siguiente:
+\begin{description}
+\item[Nombre] Aparece a la izquierda de la cabecera de la tabla.
+\item[Coste en puntos] Es el valor que acompaña al nombre de la
+  unidad, seguida de dos puntos.
+\item[RO] Es el rango de ocupación de la unidad. Tiene la
+  forma $(x, y)$, donde la $x$ representa su rango de ocupación en la
+  coordenada $x$, e $y$ su correpondiente en la coordenada $y$.
+\item[M] Capacidad de movimiento.
+\item[HA] Habilidad de armas.
+\item[HP] Habilidad de proyectiles.
+\item[F] Fuerza.
+\item[R] Resistencia.
+\item[A] Ataques.
+\item[H] Heridas.
+\item[I] Iniciativa.
+\item[L] Liderazgo.
+\item[P] Potencia.
+\item[SA] Salvación por armadura.
+\item[FA] Fuerza del arma.
+\item[AA] Alcance del arma.
+\item[Nmin] Número mínimo de efectivos para esa unidad, en el diseño
+  del ejército.
+\item[Nmax] Número máximo de efectivos para esa unidad, en el diseño
+  del ejército.
+\end{description}
+
+\subsection*{Humanos}
+El ejército humano se caracteriza por su firmeza y carácter puro en la
+guerra. La cobardía y el desorden no se encuentran entre sus
+atributos, y su rol está basado en la disciplina.
+
+\subsubsection*{Legión}
+La legión es la unidad mas básica de un ejército humano. Forman en
+filas apretadas y son muy efectivos en el combate cuerpo a cuerpo.
+
+\perfil{Legión}{\atributos{50}{5}{0}{4}{4}{2}{1}{5}{7}}{\caracteristicas{1}{7}{0}{0}{10}{40}}{10}{10}{25}
+
+\subsubsection*{Arcabuceros}
+Los arcabuceros son los encargados de traer la tecnología a un mundo
+dominado por las bestias. Poseen armas de pólvora cuyos disparos
+penetran las mas duras armaduras y desgarran las mas escamosas o
+gruesas pieles. Son torpes en el combate cuerpo a cuerpo y es
+aconsejable que disparen desde una buena posición en algún lugar
+alejado del campo de batalla.
+
+\perfil{Arcabuceros}{\atributos{50}{4}{5}{3}{3}{1}{1}{1}{7}}{\caracteristicas{1}{4}{6}{200}{5}{20}}{10}{10}{25}
+
+\subsubsection*{Ballesteros}
+Los ballesteros son unidades de apoyo, menos precisos que los
+arcabuceros, pero mas baratos, numerosos y con sus ballestas tienen un
+mayor alcance. Pueden constituir una buena unidad para ser usada para el
+desgaste inicial de los combates.
+
+\perfil{Ballesteros}{\atributos{50}{4}{5}{3}{3}{1}{1}{1}{7}}{\caracteristicas{1}{4}{4}{300}{10}{30}}{10}{10}{20}
+
+\subsubsection*{Escuderos}
+Constituyen la única caballería ligera del ejército humano. Poseen
+arcos cortos para disparar en sus travesías, y constituyen a su vez,
+una unidad de desgaste inicial, y un apollo secundario en combates
+cuerpo a cuerpo.
+
+\perfil{Escuderos}{\atributos{125}{4}{5}{4}{3}{2}{1}{4}{7}}{\caracteristicas{2}{4}{4}{100}{5}{20}}{10}{20}{40}
+
+\subsubsection*{Equites}
+Constituyen una de las caballerías pesadas del ejército humano. Su
+carga es dura, su presencia en combate imponente, y su firmeza excesiva.
+
+\perfil{Equites}{\atributos{125}{5}{0}{6}{4}{3}{1}{7}{8}}{\caracteristicas{2}{6}{0}{0}{5}{20}}{10}{20}{65}
+
+\subsubsection*{Unicornios}
+Un unicornio es un caballo blanco con un cuerno largo y puntiagudo en
+su frente. Son una caballería a su vez pesada por su fuerza y ligera por su velocidad,
+lo que contituye una paradoja del ejército humano. Deben usarse con
+cuidado, ya que, por su rareza, es una unidad muy cara de conseguir y
+su pérdida puede suponer la derrota.
+
+\perfil{Unicornios}{\atributos{150}{6}{0}{5}{4}{2}{1}{8}{9}}{\caracteristicas{2}{8}{0}{0}{5}{20}}{10}{20}{80}
+
+\subsubsection*{Pegasos}
+Es una caballería alada que posee el ejército humano. Pueden tener
+todo el campo de batalla bajo su estricta vigilizancia, colocándose en
+cualquier lugar del campo de batalla en el menor tiempo posible, para
+hacer gala de su potencia en combate.
+
+\perfil{Pegasos}{\atributos{200}{6}{0}{7}{5}{4}{2}{7}{8}}{\caracteristicas{2}{7}{0}{0}{3}{10}}{20}{20}{90}
+
+\subsubsection*{Mantícora}
+Una mantícora es un león rojizo con pequeñas alas y cabeza humana. Actúan solos
+y son muy agresivos. Unen la potencia y la brutalidad de una bestia con
+la disciplina y la inteligencia de un hombre, haciendo de ellos una
+criatura mortal y horrenda para sus enemigos.
+
+\perfil{Mantícora}{\atributos{100}{6}{0}{6}{5}{4}{6}{5}{10}}{\caracteristicas{4}{10}{0}{0}{1}{1}}{20}{20}{180}
+
+\subsubsection*{Dragón}
+Si un dragón hace presencia en un campo de batalla, el enemigo no
+debería proseguir su campaña. Solo son propiedad de reyes y altos
+caudillos, que en lejanos viajes y despues de tremendas guerras y
+aventuras de honor se han hecho dueños y domadores de estos seres de
+fantasía. Son muy fuertes, vuelan, escupen fuego, son
+indesmoralizables y tienen gran resistencia al cansancio y la fatiga.
+
+\perfil{Dragón}{\atributos{220}{7}{7}{7}{7}{6}{5}{7}{9}}{\caracteristicas{5}{10}{7}{150}{1}{1}}{50}{50}{300}
+
+\subsection*{Orcos}
+Los orcos son salvajes, indisciplinados, brutos, fieros, sucios y
+tan torpes que casi ni siquiera saben usar el arco y la flecha, y
+siempre vienen acompañados de criaturas todavía mas salvajes, mas
+indisciplinadas, mas brutas, mas fieras y mas sucias aún si cabe,
+constituyendo una horrible masa verde y marrón de olor pestilente que
+provocan dolor y caos por donde quiera que pasen.
+
+\subsubsection*{Guerreros}
+Los guerreros orcos son la unidad mas básica de un ejército orco. Son
+muy baratos y forman grandes unidades con una gran cantidad de
+efectivos, pero son muy indisciplinados lo que los hacen muy poco
+fiables en la batalla.
+
+\perfil{Guerreros}{\atributos{50}{3}{0}{4}{4}{1}{1}{2}{6}}{\caracteristicas{1}{2}{0}{0}{20}{60}}{10}{10}{10}
+
+\subsubsection*{Trasgos}
+Los tragos son pequeñas criaturas traviesas aunque igual de indecentes
+y asquerosas que los orcos. Pero aunque sean crédulos y poco
+inteligentes, también son salvajes, peligros y con gran afición a la
+sangre.
+
+Al igual que los guerreros orcos, se mueven en gran multitud, aparecen
+en cualquier rincón y lugar, y, aunque no suele salir a la luz del
+sol, salen de sus madrigeras y forman multitud en cuanto el sol cae
+por el horizonte.
+
+\perfil{Trasgos}{\atributos{60}{3}{0}{3}{3}{1}{1}{2}{5}}{\caracteristicas{1}{1}{0}{0}{20}{100}}{8}{8}{5}
+
+\subsubsection*{Onis}
+Los onis son como los hermanos mayores de los orcos. Aunque no
+sean la misma criatura ni tengan ninguna relación con ellos, tienen un
+aspecto semejante e igual de bárbaro, comparten las mismas aficiones
+bélicas, y es por ello que gustan de ir junto a los orcos.
+
+Son generalmente mas grandes y fuertes que los orcos, y también son
+algo mas disciplinados, lo que los hace muy peligrosos en el combate
+cuerpo a cuerpo.
+
+\perfil{Onis}{\atributos{50}{4}{0}{5}{4}{2}{1}{4}{7}}{\caracteristicas{2}{5}{0}{0}{20}{50}}{12}{12}{15}
+
+\subsubsection*{Wargos}
+Actúan como la caballería ligera de un ejército orco, aunque ellos no lo
+sepan. Un wargo es una especie de lobo pero mas grande, feo y
+salvaje, y en un ejército orco, son montados por guerreros orcos. El
+wargo es un animal muy veloz, y sus montadores suelen llevar un arco,
+aunque no sean muy hábiles en su uso, para disparar a todo lo que le
+rodea mientras eligen quién será su próximo enemigo.
+
+\perfil{Wargos}{\atributos{125}{3}{5}{4}{4}{2}{1}{2}{6}}{\caracteristicas{2}{4}{5}{160}{10}{25}}{10}{20}{30}
+
+\subsubsection*{Jabalíes}
+Un jabalí es una criatura mas grande que un wargo, con colmillos mas
+largos y un hocico baboso. Los orcos también tienen colmillos y
+babean. Los jabalíes acostumbran a revolverse entre el fango. Los
+orcos también tienen bastante fango en su cuerpo. Ahora coloca a tal
+pareja variopinta de criaturas, la primera subida a lomos de la
+segunda. Así es la caballería orca.
+
+\perfil{Jabalíes}{\atributos{90}{4}{0}{5}{4}{3}{1}{3}{7}}{\caracteristicas{2}{6}{0}{0}{10}{20}}{15}{20}{30}
+
+\subsubsection*{Garms}
+Los garms no son tan sucios como los jabalíes a los que acostumbran a
+montar los orcos, pero sí que son grandes, feos y fieros. Poseen una
+fuera descomunal y son muy rudos, lo que hace a las cargas de una
+unidad de garms uno de los fenómenos mas brutales que puedan suceder
+en una batalla.
+
+\perfil{Garms}{\atributos{100}{4}{0}{6}{5}{4}{2}{2}{7}}{\caracteristicas{3}{7}{0}{0}{5}{15}}{20}{40}{50}
+
+\subsubsection*{Trolls}
+Un troll es una criatura grande de aspecto humanoide y deforme, de
+piel algo escamosa y cubierta de lodo, lo que lo hace una criatura muy
+resistente a los golpes. No son muy habilidosos, pero sus golpes son
+muy potentes, y acostumbran a llevar objetos con lo que aplastar a sus
+enemigos. No es muy inteligente, y no sabe llevar a cabo ningún tipo
+de táctica ni estrategia, pero su estupidez y su brutalidad lo hacen
+idóneos para mandarlas a combatir contra unidades rápidas o dañinas
+del enemigo, para mantenerlas ocupadas mientras se desenvuelve el
+resto de la batalla.
+
+\perfil{Trolls}{\atributos{75}{3}{0}{5}{5}{3}{3}{7}{8}}{\caracteristicas{2}{7}{0}{0}{3}{10}}{30}{30}{80}
+
+\subsubsection*{Abominación}
+Una abominación es una criatura que deambula sola provocando el caos a
+su paso. Es un gran agente de enfermedades (a la que los orcos ya
+están acostumbrados) y da pavor enfrentarse a ellas. Es muy dificil
+acertar al efectuarle golpes y los que impacten tampoco harán mucho
+efecto en él.
+
+\perfil{Abominación}{\atributos{75}{5}{0}{6}{6}{4}{4}{2}{10}}{\caracteristicas{4}{8}{0}{0}{1}{1}}{50}{50}{90}
+
+\subsubsection*{Gigante}
+Los gigantes son una antigua raza de hombres, excluidas de la
+sociedad, que con el paso del tiempo se fueron embruteciendo,
+aumentando de tamaño y perdiendo progresivamente su inteligencia, lo
+que los ha convertido en unos seres primitivos pero con gran capacidad
+destructiva, motivo que los ha hecho establecer contacto con la raza
+de los orcos.
+
+\perfil{Gigante}{\atributos{75}{5}{0}{7}{6}{6}{5}{1}{8}}{\caracteristicas{5}{7}{0}{0}{1}{1}}{50}{50}{150}

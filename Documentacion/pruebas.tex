@@ -1,0 +1,85 @@
+% Este archivo es parte de la memoria del proyecto fin de carrera
+% de Aarón Bueno Villares. Protegida bajo la licencia GFDL.
+%
+% Para más información, la licencia completa viene incluida en el
+% fichero fdl-1.3.tex
+
+% Copyright (C) 2010 Aarón Bueno Villares
+
+\section{Pruebas}
+\label{sec:pruebas}
+
+Para diseñar los casos de prueba, distinguimos entre aquellas clases y
+estructuras que, por su naturaleza, pueden ser testeadas
+individualmente, de aquellas que se testean de forma integrada. La
+mayoría de las funciones ofrecidas por el gestor de escenario fueron
+testeadas de forma individual, al igual que todas las
+estructuras matemáticas. En cambio, el resto de clases y funciones,
+por su simplicidad y por su dependencia gráfica, no merecía la pena
+realizar casos de prueba individuales, quizás mas complejos que
+estudiar, simplemente, su comportamiento integrado. Así que, en
+definitiva, la organización de los casos de prueba fue la siguiente:
+
+\begin{enumerate}
+\item A medida que se fueron implementando, se probaron
+  individualmente todas las estructuras y funciones matemáticas
+  diseñadas y las funciones de corte mas matemático.
+\item Una vez superados los test anteriores, y a medida que se
+  agregaba nueva funcionalidad, se probaba cada vez el sistema
+  completo de forma integrada.
+\item Al finalizar todo el proceso completo de diseño e implementación
+  comenzaron las pruebas beta. Algunos usuarios probaron el producto y
+  no se detectó ningún defecto adicional.
+\end{enumerate}
+
+\subsection{Pruebas alfa}
+Las pruebas alfa son las pruebas que se realizan durante el proceso de
+desarrollo. En el caso que nos ocupa, las pruebas se realizaban al
+final de cada iteración de implementación.
+
+\subsubsection{Pruebas unitarias}
+Las funciones sustentas a este tipo de pruebas, como hemos dicho
+antes, eran las mas relacionadas con el ámbito mas matemático del
+juego. Debido a su complejidad, las pruebas se realizaron bajo un
+enfoque estructural, es decir, de caja blanca, y además, bajo un
+criterio de cobertura de sentencias, es decir, se estableció que la
+mejor forma de estudiar el comportamiento correcto de una función era
+lograr que al menos cada posible rama de la función fuese explorada,
+con la finalidad de que al menos cada sentencia fuera ejecutada una
+vez. A su vez, se diseñaron las pruebas de modo que las sentencias mas
+problemáticas de cada función (aquellas que poseen divisiones,
+peligros de desbordamiento, bucles o ecuaciones complejas) se probaran
+varias veces explorando tanto los casos mas comunes como los mas
+extremos (análisis de valores límite), de modo que se examine de forma
+exhaustiva su comportamiento.
+
+Como era de esperar, el mayor núcleo de errores de esta clase se
+encontraban en la implementación de las estructuras matemáticas del
+juego, que tenían alta implicación en el comportamiento del gestor de
+escenarios.
+
+\subsubsection{Pruebas de integración}
+Las pruebas de integración del sistema complejo al completo (en cada
+iteracción de diseño), debida a la relativa sencillez estructural de
+las clases que la conformaban (una funcionalidad compleja pero formada
+por un rico dinamismo de funciones individuales muy sencillas), se
+realizaron bajo un enfoque funcional o de caja negra. Se probaba,
+sencillamente, que la ejecución de la nueva funcionalidad
+implementada, en consonancia con funcionalidades completadas previas,
+realizara con éxito lo que se supone que debía realizar.
+
+El principal núcleo de defectos encontrados bajo estas pruebas de
+integración recayeron sobre el gestor de iconos, sobre el gestor de
+ejércitos, y en los procesos de destrucción (cuando finaliza una
+partida). 
+
+\subsection{Pruebas beta}
+Al finalizar el proceso de diseño, implementación y pruebas alfa se
+ofreció el juego a distintos usuarios (generalmente compañeros de
+universidad) para que probaran el juego y me remitieran los errores
+producidos y el contexto del mismo. Luego repetía las situaciones
+reportadas, hasta obtener el error nuevamente y explorar su origen,
+corregir y reenviar la nueva versión a mis
+\emph{ayudantes}. Generalmente, los fallos y defectos encontrados en
+esta fase de pruebas fueron relacionadas con el proceso de huida de
+las unidades desmoralizadas en combate.

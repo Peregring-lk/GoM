@@ -1,0 +1,3 @@
+Ejercito 1
+Humanos-sample
+Orcos-sample

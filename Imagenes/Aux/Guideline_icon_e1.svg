@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="256" height="256">
+  <g transform="translate(0, -796.362)">
+    <path d="m 70.696429,831.42914 -68.4508929,88.40625 68.4508929,90.90621 0,-41.93746 165.656251,0 0,-95.4375 -165.656251,0 0,-41.9375 z" style="fill: rgb(204, 204, 204);"/>
+    <path d="M 245.29375,961.62177 C 200.83992,911.14259 141.30158,952.40706 99.142883,951.02568 79.9187,950.39577 57.554209,936.27431 42.09029,928.54235" style="fill: none; stroke: rgb(0, 84, 166); stroke-width: 16; stroke-linecap: square;"/>
+    <path d="M 23.002878,920.09157 56.220374,910.1513 39.521062,951.614 23.002878,920.09157 z" style="fill: rgb(0, 84, 166);"/>
+    <path d="M 243.92856,85.642855 C 159.17574,144.18999 137.78306,114.62595 107.85714,98.5 c -29.925918,-16.125948 -47.142854,0 -47.142854,0" transform="translate(0, 796.362)" style="fill: none; stroke: rgb(237, 28, 36); stroke-width: 16; stroke-linecap: square;"/>
+    <path d="m 41.927674,903.78716 15.398504,-31.78823 17.87046,40.97157 -33.268964,-9.18334 z" style="fill: rgb(237, 28, 36);"/>
+  </g>
+</svg>

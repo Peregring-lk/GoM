@@ -1,0 +1,133 @@
+% Este archivo es parte de la memoria del proyecto fin de carrera
+% de Aarón Bueno Villares. Protegida bajo la licencia GFDL.
+%
+% Para más información, la licencia completa viene incluida en el
+% fichero fdl-1.3.tex
+
+% Copyright (C) 2010 Aarón Bueno Villares
+
+\section{Herramientas}
+\label{sec:herramientas}
+
+Para la realización de este proyecto se ha hecho uso de una serie de
+herramientas y aplicaciones adicionales que facilitaron su desarrollo.
+
+\subsection{GCC}
+El proyecto ha sido desarrollado en el lenguaje de programación C++. Y
+todo lenguaje necesita de un compilador que permita traducir el código
+a código máquina, único lenguaje que la máquina comprende. Nuestro
+particular traductor (mas concretamente, compilador) ha sido
+GCC\footnote{\emph{GNU Compiler Collection.}}.
+
+\emph{GCC} es un compilador de \emph{GNU}, por lo tanto libre y
+abierto, que da soporte a varios lenguajes de programación, entre
+ellos \emph{C++}. Pertenece al llamado \emph{GNU toolchain}, el
+conjunto de herramientas de \emph{GNU} por y para la programación.
+ 
+\subsection{libSDL}
+Todo juego tiene una gran cantidad de elementos de interacción con el
+usuario. Para ello, se debe tener acceso al hardware, de modo que
+obtengamos información de todos los eventos de usuario producidos.
+
+La librería SDL\footnote{\emph{Simple DirectMedia Layer.}} ha sido la
+piedra angular del aspecto multimedia de nuestro juego. Lo hemos usado
+principalmente para nuestra interacción con el sistema de video, y los eventos de teclado y
+ratón. A su vez, hemos usado las siguientes librerias auxiliares de
+\emph{SDL}:
+\begin{description}
+\item[SDL\_image:] Usado para la carga de imágenes (permite trabajar con
+  imágenes de cualquier formato, mientras que \emph{SDL} solo permite
+  cargar imagenes \emph{bmp}).
+\item[SDL\_mixer:] Usado para nuestro trato con audio.
+\item[SDL\_gfx:] Usado para rotar y redimensionar nuestras imágenes.
+\item[SDL\_ttf:] Usado para imprimir texto en pantalla.
+\end{description}
+
+\subsection{GIMP}
+\emph{GIMP}\footnote{\emph{GNU Image Manipulation Program.}} es otra
+herramienta del proyecto \emph{GNU}. Como su nombre indica, es un
+editor y manipulador de imágenes. Con él hemos creado (y/o modificado
+a partir de otras imágenes libres) todos los iconos, los menus, las
+peanas de las unidades, y en general, toda imagen y todo elemento
+gráfico del juego a pasado por manos de \emph{GIMP}, bien para su
+retoque, bien para su creación.
+
+\subsection{GNU Emacs}
+Richard Stallman junto a Guy Steele creó, en 1975,
+el editor de textos Emacs\footnote{Editor MACroS}. Mas tarde, entre
+1984 y 1985, se lanzó \emph{GNU Emacs}, una nueva versión derivada de
+la anterior diseñada por Richard Stallman para el proyecto
+\emph{GNU}. Hoy en día es considerada por muchos programadores como el
+mejor editor de textos, y existen una gran diversidad de modos de
+emacs que proveen diversos entornos de desarrollo para prácticamente
+casi todos los lenguajes de programación.
+
+Nuestro proyecto ha sido prácticamente desarrollado al completo en él.
+
+\subsection{SVN}
+Este proyecto dispone de un repositorio donde siempre hemos mantenido
+actualizado el desarrollo del proyecto. \emph{SVN}\footnote{\emph{SubVersioN}.} ha sido la
+herramienta auxiliar utilizada para interactuar con el repositorio,
+actualizar las versiones, y mantener nuestra copia de seguridad del proyecto.
+
+Las herramientas como \emph{SVN} proveen un mecanismo de control de
+versiones cuando existen varios desarrolladores involucrados, evitando
+que se destruyan cambios y ordenando las distintas modificaciones que
+se van realizando en el proyecto, permitiendo tener acceso a
+anteriores versiones de cada fichero involucrado en el proyecto, así
+como del proyecto en su conjunto. Como este proyecto ha
+sido desarrollado únicamente por mí, no se ha aprovechado
+completamente la potencia de esta herramienta, pero aun así me ha
+permitido tener acceso directo a mi proyecto desde cualquier máquina,
+y tener acceso, además, a todas la versiones enviadas, que en varias
+ocasiones me ha permitido recuperar versiones antiguas de ciertos
+ficheros que he necesitado recuperar.
+
+\subsection{Make}
+\emph{Make} es una herramienta que hemos usado para la automatización
+de la compilación del proyecto. \emph{Make} permite crear scripts,
+comúnmente en un fichero llamado \emph{makefile}, para declarar las
+dependencias de los distintos módulos, a fin de acelerar la
+compilación (dependencias sin modificaciones no se recompilan) y
+aumentar la robustez de la misma.
+
+En nuestro proyecto, además de compilar el proyecto, a través de
+\emph{make} podemos generar la documentación y la memoria del proyecto
+(véase abajo), así como limpiar de forma directa todos los ficheros
+intermedios e innecesarios creados en el proceso de compilación tanto
+del proyecto como de la memoria.
+
+\subsection{LaTeX}
+\emph{TeX} fue concebido inicialmente por Donald Knuth a principios de la década de los
+80 para construir un lenguaje de programación de edición
+profesional de textos científicos, y ya en 1984 Leslie Lamport
+desarrolló \emph{LaTeX} como un conjunto de macros que orientaban \emph{TeX}
+a la edición de cartas, libros, y en general, a la edición de textos
+desde un mayor nivel de abstracción.
+
+Este proyecto ha hecho uso de este lenguaje para la construcción completa
+de la memoria.
+
+\subsection{Doxygen}
+\emph{Doxygen} es una herramienta ideada para documentar código de
+varios lenguajes de programación. Provee una serie de comandos, dentro
+de los llamados \emph{comentarios de Doxygen}, que Doxygen sabe
+interpretar y que luego usa para generar un documento html, pdf o rtf
+(según los deseos del usuario) con la documentación del código,
+haciendo uso además de \emph{Graphviz} y \emph{TeX} para generar gráficos de
+dependencias entre clases y módulos, y proveer la inclusión de
+fórmulas matemáticas en la documentación resultante.
+
+Nuestro proyecto ha hecho uso de ésta herramienta para documentar el
+código.
+
+\subsection{Umbrello}
+\emph{Umbrello} es una herramienta de apoyo para el desarrollo
+software, sobre todo bajo un paradigma orientado a objetos, que
+permite hacer un análisis y un diseño bajo el estándar UML, obtener
+los diagramas UML mediante ingeniería inversa a partir de código
+nativo, o automatizar parte de la implementación del software
+creando el código a partir de los diagramas UML diseñados.
+
+Se ha usado esta herramienta para realizar los diagramas UML de la
+memoria.

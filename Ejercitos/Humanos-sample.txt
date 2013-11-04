@@ -1,0 +1,19 @@
+Humanos 3095
+Legión 625
+25 5 300 150
+Legión 500
+20 5 400 150
+Legión 500
+20 5 500 150
+Arcabuceros 200
+8 4 400 80
+Arcabuceros 200
+8 4 500 80
+Dragón 300
+1 1 1000 150
+Pegasos 270
+3 3 100 150
+Arcabuceros 200
+8 4 600 80
+Dragón 300
+1 1 1200 150

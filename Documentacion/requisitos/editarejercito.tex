@@ -1,0 +1,36 @@
+\reqFuncional{Editar ejército}{Modifica un ejército existente}{Un usuario y el sistema}{El usuario se encuentra frente a la pantalla principal}
+{
+  \item Desde la pantalla principal, el usuario indica que desea modificar un ejército.
+  \item Se muestra una pantalla con la lista de ejércitos actuales.
+  \item El usuario elige un ejército. \label{meini}
+  \item El usuario indica que desea modificarlo. \label{memodificar}
+  \item <<include>> \ref{Modificar ejército (caso de uso abstracto)}: Modificar ejército. \label{meeditar}
+  \item El usuario ordena guardar los cambios. \label{mefin}
+  \item El sistema guarda los cambios del ejército. \label{meguardar}
+  \item El caso de uso finaliza con éxito.
+}
+{
+  \item[\ref{meini}-\ref{mefin}:] El usuario cancela la operación.
+    \begin{enumerate}
+    \item El caso de uso finaliza sin éxito.
+    \item Se muestra de nuevo la pantalla principal.
+    \end{enumerate}
+  \item[\ref{memodificar}:] El usuario elimina el ejército.
+    \begin{enumerate}
+    \item Vuelve al paso \ref{meini}.
+    \end{enumerate}
+  \item[\ref{mefin}:] El usuario desea cambiar el nombre de su ejército.
+    \begin{enumerate}
+    \item El usuario indica el nuevo nombre que dará a su ejército. El nombre no deberá tener más de 30 carácters de longitud.\label{meinuevonombre} 
+      \begin{enumerate}
+      \item El usuario cancela la operación.
+      \item Vuelve al paso \ref{meeditar}.
+      \end{enumerate}
+    \item El sistema comprueba que no exista un ejército con el mismo nombre.
+      \begin{enumerate}
+      \item Ya existe un ejército con el mismo nombre.
+      \item Vuelve al paso \ref{meinuevonombre}.
+      \end{enumerate}
+    \item Continúa en el paso \ref{meguardar}.
+    \end{enumerate}
+}{Se actualiza el ejército satisfactoriamente.}

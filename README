@@ -1,0 +1,28 @@
+*************************
+         README
+*************************
+
+-------------------------
+      Dependencias
+-------------------------
+ * SDL
+ * SDL_mixer
+ * SDL_ttf
+ * SDL_image
+ * SDL_gfx
+
+
+-------------------------
+      Instalación
+-------------------------
+Si tienes instaladas todas las dependencias
+indicadas anteriormente, para instalar GoM
+solo te hace falta ejecutar en consola, dentro
+del directorio donde se encuentra este fichero,
+la orden:
+
+$ make
+
+Luego, podrás ejecutarlo con solo hacer:
+
+$ ./GoM

@@ -1,0 +1,15 @@
+Orcos 1550
+Guerreros 200
+20 5 300 150
+Guerreros 200
+20 5 500 150
+Guerreros 200
+20 5 700 150
+Guerreros 200
+20 5 900 150
+Onis 300
+20 5 50 150
+Onis 300
+20 5 200 150
+Gigante 150
+1 1 1000 150

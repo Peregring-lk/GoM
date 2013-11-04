@@ -1,0 +1,32 @@
+\reqFuncional{Comenzar batalla}{Se eligen los ejércitos combatientes y comienza una batalla}{Dos usuarios y el sistema}{Los usuarios se encuentran frente a la pantalla principal}
+{
+  \item Desde la pantalla principal, algún usuario indica al sistema que desean comenzar una batalla.
+  \item El sistema muestra una pantalla con los ejércitos disponibles.\label{nbini}
+  \item Cada usuario elige un ejército. \label{nbeligen}
+  \item Algún usuario pide al sistema que comienze la batalla.
+  \item El sistema comprueba que ambos ejércitos estén elegidos. \label{nbcompeligen}
+  \item El sistema comprueba que ambos ejércitos tengan aproximadamente los mismos puntos, según especifica el reglamento de \textit{GoM}. \label{nbpuntos}
+  \item Se muestra una pantalla con los ejércitos desplegados, la mesa de batalla, un panel de ayuda contextual, un panel de errores, una barra que indica el turno actual de la partida y un conjunto de iconos que muestran todas las tareas disponibles, según el reglamento de \textit{GoM}.
+  \item El sistema espera que algún usuario de una orden. \label{nbtarea}
+  \item <<include>> \ref{Ejecutar tarea (caso de uso abstracto)}: Ejecutar tarea.
+  \item La partida ha finalizado. \label{nbfinpartida}
+  \item Se muestra una pantalla con el ganador y los puntos conseguidos por ambos contendientes.
+  \item El usuario vuelve a la pantalla principal.
+  \item El caso de uso finaliza con éxito.
+}
+{
+  \item[\ref{nbini}-\ref{nbfinpartida}:] El usuario cancela la operación. 
+    \begin{enumerate}
+    \item El caso de uso finaliza sin éxito.
+    \item Se vuelve a la pantalla principal.
+    \end{enumerate}
+\item[\ref{nbtarea}:] <<extend>> \ref{Información de una tarea (caso de uso abstracto)}: Información de una tarea.
+  \item[\ref{nbcompeligen}, \ref{nbpuntos}:] No se verifica la comprobación.
+    \begin{enumerate}
+    \item Vuelve al paso \ref{nbeligen}
+    \end{enumerate}
+  \item[\ref{nbfinpartida}:] La partida aún no ha finalizado.
+    \begin{enumerate}
+    \item Vuelve al paso \ref{nbtarea}.
+    \end{enumerate}
+}{Los usuarios empiezan a jugar una partida equilibrada.}

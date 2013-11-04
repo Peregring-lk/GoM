@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Author: Bub's, this artwork is *not* copyrighted -->
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.0" width="225" height="225" id="svg2" sodipodi:version="0.32" inkscape:version="0.45.1" sodipodi:docname="Wavy arrow down right.svg" inkscape:output_extension="org.inkscape.output.svg.inkscape" sodipodi:docbase="C:\Documents and Settings\Mendaliv\Desktop">
+  <metadata id="metadata15">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs id="defs13"/>
+  <sodipodi:namedview inkscape:window-height="581" inkscape:window-width="791" inkscape:pageshadow="2" inkscape:pageopacity="0.0" guidetolerance="10.0" gridtolerance="10.0" objecttolerance="10.0" borderopacity="1.0" bordercolor="#666666" pagecolor="#ffffff" id="base" inkscape:zoom="1.3328963" inkscape:cx="128.13551" inkscape:cy="112.5" inkscape:window-x="110" inkscape:window-y="145" inkscape:current-layer="g2158" width="225px" height="225px"/>
+  <g id="g2158" transform="matrix(0.835792, 1.01486, -1.01486, 0.835792, 80.1737, -45.1323)">
+    <g id="g3134">
+      <path d="M 178,64 C 124,44 108,60 88,74 C 66,86 49,96 0,79 L 14,37 C 38,46 57,45 83,26 C 112,5 150,6 191,24 L 178,64 z " style="fill: rgb(0, 118, 163); fill-opacity: 1;" id="path8"/>
+      <path d="M 173,0 L 225,50 L 160,76 L 173,0 z " style="fill: rgb(0, 118, 163); fill-opacity: 1;" id="path10"/>
+    </g>
+  </g>
+</svg>

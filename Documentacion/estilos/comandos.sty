@@ -1,0 +1,325 @@
+%---------COMANDOS--------------------------------
+
+%-------- No indentamos el texto.
+%-------- Si queremos indentarlo, comentamos la linea
+\parindent = 0mm
+%-------------------------------------------------
+
+%---------Lineas----------------------------------
+\newcommand{\Hrule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+%-------------------------------------------------
+
+%-------- Estilos definidos ----------------------
+\newcommand{\programa}[1]{\textit{#1}}
+\newcommand{\comando}[1]{\texttt{#1}}
+\newcommand{\negrita}[1]{\textbf{#1}}
+\newcommand{\subrayado}[1]{\underline{#1}}
+%-------------------------------------------------
+
+%---------Definicion------------------------------
+\newtheorem{defin}{Definición}[section]
+%-------------------------------------------------
+
+\newcommand{\margen}{
+  \setlength\topmargin{0px}
+  \setlength\headheight{10px}
+  \setlength\headsep{15px}
+  \setlength\textheight{9in}
+  \setlength\textwidth{6.5in}
+  \setlength\oddsidemargin{0.5cm}% Páginas impares (derecha)
+  \setlength\evensidemargin{-0.8cm}% Páginas pares (izquierda)
+  \setlength\parindent{0in}
+}
+\newcommand{\sinmargen}{
+  \setlength\topmargin{0px}
+  \setlength\headheight{10px}
+  \setlength\headsep{15px}
+  \setlength\textheight{9in}
+  \setlength\textwidth{6.5in}
+  \setlength\oddsidemargin{0cm}% Páginas impares (derecha)
+  \setlength\evensidemargin{0cm}% Páginas pares (izquierda)
+  \setlength\parindent{0in}
+}
+
+%---------Listing---------------------------------
+%-- Formato de los listados de código
+\lstset{ frame=Ltb,
+     framerule=0pt,
+     boxpos=c,
+     aboveskip=0.5cm,
+     framextopmargin=3pt,
+     framexbottommargin=3pt,
+     framexleftmargin=0.4cm,
+     framexrightmargin=-3cm,
+     framesep=0pt,
+     rulesep=.4pt,
+     backgroundcolor=\color{gray97},
+     rulesepcolor=\color{black},
+     %
+     stringstyle=\ttfamily\color{burdeos},
+     identifierstyle=,
+     showstringspaces = false,
+     basicstyle=\small\ttfamily,
+     commentstyle=\color{violeta},
+     keywordstyle=\bfseries,
+   }
+
+% minimizar fragmentado de listados
+\lstnewenvironment{listing}[1][]
+   {\lstset{#1}\pagebreak[0]}{\pagebreak[0]}
+
+% estilo de consola
+\lstdefinestyle{consola}
+   {basicstyle=\scriptsize\bf\ttfamily,
+    backgroundcolor=\color{gray75},
+   }
+
+%estilo para C
+\lstdefinestyle{C}
+   {language=C,
+     %
+     numbers=left,
+     numbersep=15pt,
+     numberstyle=\tiny,
+     numberfirstline = false,
+     breaklines=true,
+     emptylines=2,
+   }
+
+%estilo para C++
+\lstdefinestyle{C++}
+   {language=C++,
+     %
+     numbers=left,
+     numbersep=15pt,
+     numberstyle=\tiny,
+     numberfirstline = false,
+     breaklines=true,
+     emptylines=2,
+   }
+
+%estilo para LaTeX
+\lstdefinestyle{LaTeX}
+   {language=[LaTeX]TeX
+   }
+
+%estilo para SQL
+\lstdefinestyle{SQL}
+  {language=SQL
+  }
+%------------------------------------------------
+
+%----- Imagenes ----------------------------------
+
+%  Comando:
+% \figura{nombre-fichero}{argumentos}{título}{etiqueta}{posicion del float}
+% Resultado:
+% Inserta una figura. "La figura~\ref{etiqueta} muestra..." permite
+% referenciar la figura desde el texto.
+% argumentos: width=Xcm,height=Ycm,angle=Z
+
+%--------------------------------------------------
+\newcommand{\figura}[5]{
+
+    \begin{figure}[#5]
+    \begin{center}
+    \includegraphics[#2]{#1}
+    \caption{#3}
+    \label{#4}
+    \end{center}
+    \end{figure}
+
+}
+
+% Renombramos las figuras y las tablas
+%% \renewcommand{\figurename}{Figura}
+%% \renewcommand{\listfigurename}{Indice de figuras}
+%% \renewcommand{\tablename}{Tabla}
+%% \renewcommand{\listtablename}{Índice de tablas} 
+\addto\captionsspanish{%
+\def\tablename{Tabla}%
+\def\listtablename{Índice de tablas}%
+}
+
+%-------------EJEMPLO--------------------------------------------
+\newcommand{\ejemplo}[1]{
+    \vspace*{0.5cm}
+    \Large \textsc{Ejemplo:}
+    \normalsize
+    \vspace*{0.2cm}
+    \hrule
+    \vspace*{0.2cm}
+
+    #1
+
+    \vspace*{0.2cm}
+    \hrule
+    \vspace*{0.5cm}
+}
+%----------------------------------------------------------------
+
+% ----------- Una linea de tablas mas ancha ---------------------
+\newcolumntype{I}{!{\vrule width 3pt}}
+\newlength\savedwidth
+\newcommand\whline{\noalign{\global\savedwidth\arrayrulewidth
+                            \global\arrayrulewidth 3pt}%
+                   \hline
+                   \noalign{\global\arrayrulewidth\savedwidth}}
+% ---------------------------------------------------------------
+
+% ------------ Comandos de doxygen ------------------------------
+\newenvironment{CompactList}
+{\begin{list}{}{
+  \setlength{\leftmargin}{0.5cm}
+  \setlength{\itemsep}{0pt}
+  \setlength{\parsep}{0pt}
+  \setlength{\topsep}{0pt}
+  \renewcommand{\makelabel}{\hfill}}}
+{\end{list}}
+\newenvironment{CompactItemize}
+{
+  \begin{itemize}
+  \setlength{\itemsep}{-3pt}
+  \setlength{\parsep}{0pt}
+  \setlength{\topsep}{0pt}
+  \setlength{\partopsep}{0pt}
+}
+{\end{itemize}}
+\newenvironment{Desc}
+{\begin{list}{}
+  {
+    \settowidth{\labelwidth}{40pt}
+    \setlength{\leftmargin}{\labelwidth}
+    \setlength{\parsep}{0pt}
+    \setlength{\itemsep}{-4pt}
+  }
+}
+{\end{list}}
+\newenvironment{Desc2}
+{\begin{list}{}
+  {
+    \settowidth{\labelwidth}{40pt}
+    \setlength{\leftmargin}{40pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\itemsep}{-4pt}
+  }
+}
+{\end{list}}
+
+%---------------Perfil de atributos-------------
+\newcommand{\atributos}[9]
+{
+  \begin{tabular}[h]{|c|c|c|c|c|c|c|c|c|}
+    \textbf{M} & \textbf{HA} & \textbf{HP} & \textbf{F} & \textbf{R} &
+    \textbf{A} & \textbf{H} & \textbf{I} & \textbf{L}\\
+    \hline
+    #1 & #2 & #3 & #4 & #5 & #6 & #7 & #8 & #9\\
+    \hline
+  \end{tabular}
+}
+
+\newcommand{\caracteristicas}[6]
+{
+  \begin{tabular}{|c|c|c|c|c|c|}
+    \textbf{P} & \textbf{SA} & \textbf{FA} & \textbf{AA} &
+    \textbf{Nmin} & \textbf{Nmax} \\
+    \hline
+    #1 & #2 & #3 & #4 & #5 & #6\\
+    \hline
+  \end{tabular}
+}
+
+\newcommand{\perfil}[6]
+{
+  \begin{center}
+    \begin{table}[h]
+      \centering
+      \begin{tabular}{|cc|}
+        \hline
+        \textsc{#1: \textit{#6 p}} & \textsc{RO (#4, #5)}\\
+        \hline
+        \multicolumn{2}{c}{#2} \\ \multicolumn{2}{c}{#3}\\
+      \end{tabular}
+      \caption{Perfil de atributos: #1}
+    \end{table}
+  \end{center}
+}
+
+%---------------Requisitos-----------------------
+\newcounter{req}
+
+\newcommand{\requisito}[1]{\LTXtable{\textwidth}{#1}}
+
+\newcommand{\reqGeneral}[2]
+{
+\stepcounter{req}
+  \begin{longtable}{@{\extracolsep{\fill}}|l|X|}
+     \hline
+     \multicolumn{2}{|c|}{\textbf{Requisito \thereq}}\\
+     \hline
+     \endfirsthead
+     \hline
+     \multicolumn{2}{|c|}{\textbf{Requisito \thereq}}\\
+     \hline
+     \endhead
+     \hline
+     \multicolumn{2}{|c|}{\emph{Continúa en la siguiente página \ldots}}\\
+     \hline
+     \endfoot
+     \caption{Requisito \thereq,  #1}
+     \endlastfoot
+
+     \label{table: \thereq}
+     \label{#1}
+     \textbf{Nombre:} & #1\\
+     \hline
+     \textbf{Descripción:} & #2\\
+     \hline
+  \end{longtable}
+}
+
+\newcommand{\reqFuncional}[7]
+{
+\stepcounter{req}
+  \begin{longtable}{@{\extracolsep{\fill}}|l|X|}
+     \hline
+     \multicolumn{2}{|c|}{\textbf{Requisito \thereq}}\\
+     \hline
+     \endfirsthead
+     \hline
+     \multicolumn{2}{|c|}{\textbf{Requisito \thereq}}\\
+     \hline
+     \endhead
+     \hline
+     \multicolumn{2}{|c|}{\emph{Continúa en la siguiente página \ldots}}\\
+     \hline
+     \endfoot
+     \caption{Requisito \thereq, #1}
+     \endlastfoot
+
+     \label{table: \thereq}
+     \label{#1}
+     \textbf{Caso de uso:} & #1\\
+     \hline
+     \textbf{Descripción:} & #2\\
+     \hline
+     \textbf{Actores:} & #3\\
+     \hline
+     \textbf{Precondiciones:} & #4\\
+     \hline
+     \textbf{Flujo principal:} & \begin{enumerate} #5 \end{enumerate}\\
+     \hline
+     \textbf{Flujos alternativos:} & \begin{description} #6 \end{description}\\
+     \hline
+     \textbf{Postcondiciones:} & #7\\
+     \hline
+  \end{longtable}
+}
+
+
+\newcommand{\gom}{\textit{GoM }}
+\newcommand{\GoM}{\gom}
+\newcommand{\gomf}{\textit{GoM}}
+
+\newcommand{\refreg}[1]{(pág. \pageref{#1})}

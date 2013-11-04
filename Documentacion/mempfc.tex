@@ -1,0 +1,139 @@
+% Este archivo es parte de la memoria del proyecto fin de carrera
+% de Aarón Bueno Villares. Protegida bajo la licencia GFDL.
+%
+% Para más información, la licencia completa viene incluida en el
+% fichero fdl-1.3.tex
+%
+% Fuente tomada del PFC 'DSMemorizer' de Diego Barrios Romero, a su vez
+% tomada del PFC 'libgann' de Francisco Javier Vázquez Púa, a su vez 
+% tomada de la plantilla LaTeX para la realización de Proyectos Final 
+% de Carrera de Pablo Recio Quijano.
+
+% Copyright (C) 2008 Francisco Javier Vázquez Púa
+% Copyright (C) 2009 Pablo Recio Quijano
+% Copyright (C) 2009 Diego Barrios Romero
+
+% Copyright (C) 2010 Aarón Bueno Villares
+
+\documentclass[a4paper,12pt]{book}
+
+\usepackage{./estilos/estiloBase}
+\usepackage{./estilos/colores}
+\usepackage{./estilos/comandos}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\setlength{\parskip}{1em}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%       Preámbulos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{portada}
+\cleardoublepage
+
+\input{primerahoja}
+\cleardoublepage
+
+\frontmatter 
+\pagestyle{plain}
+\input{previo}
+\cleardoublepage
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%      Cuerpo
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+
+\pagestyle{plain}
+
+\input{introduccion}
+\input{desarrollo}
+\input{conclusiones}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     Desenlace
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\backmatter
+
+\input{reglamento}
+\input{manual}
+
+\nocite{pressman}
+\nocite{laur04}
+\nocite{raym01}
+\nocite{stal04}
+\nocite{mitt04}
+\nocite{sdlweb}
+\nocite{sdlosluca}
+\nocite{cppref}
+\nocite{warh}
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Bibliografía y referencias}
+\bibliographystyle{plain}
+\bibliography{bibliografia.bib}
+
+\input{fdl-1.3}
+\input{gpl}
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%      Esquema conceptual de la memoria:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%  Introducción
+%%    GoM
+%%    Motivación
+%%    Sobre este documento
+%%  Desarrollo del software
+%%    Planificación
+%%    Análisis
+%%       Especificación de requisitos del sistema
+%%              Introducción
+%%                        Objetivos
+%%                        Alcance
+%%                        ¿Qué hace y qué no hace el producto?
+%%                        Definiciones
+%%              Requisitos generales
+%%                        Características del usuario
+%%                        Suposiciones y dependencias
+%%              Requisitos específicos
+%%                        Requisitos de Interfaz de usuario
+%%                        Requisitos funcionales
+%%                        Requisitos de rendimiento
+%%                        Atributos
+%%         Modelado de requisitos
+%%              Modelo de casos de uso
+%%              Modelo conceptual de datos
+%%              Modelo de comportamiento del sistema
+%%     Diseño
+%%       Capa de gestión de datos
+%%       Capa de dominio
+%%       Capa de presentación
+%%     Implementación
+%%       Principales problemas de implementación.
+%%       Normas de estilo
+%%       Documentación
+%%     Pruebas
+%%     Herramientas utilizadas
+%%   Conclusiones
+%%     Mejoras futuras
+%%              De interfaz
+%%              De dominio
+%%              De datos
+%%     Contacto
+%%
+%%   Apéndice: Tutorial
+%%   Apéndice: Manual de usuario
+%%   Apéndice: Reglamento
+%%   Apéndice: GFDL
+%%
+%%   Bibliografía

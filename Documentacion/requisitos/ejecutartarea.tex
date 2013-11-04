@@ -1,0 +1,26 @@
+\reqFuncional{Ejecutar tarea (caso de uso abstracto)}{Realiza la acción asociada a una tarea}{Dos usuarios y el sistema}{Dos usuarios están jugando una partida y el sistema ha mostrado el icono asociado a la tarea}
+{
+  \item El usuario cuyo turno está en juego desea realizar una acción indicándolo con el icono de la tarea.
+  \item El sistema comprueba que la tarea esté permitida en el contexto actual de la partida, según el reglamento de \textit{GoM}. \label{etini}
+  \item Si son necesarios, el sistema espera a que el usuario introduzca interactivamente los datos asociados a la acción que desea realizar (cantidad de movimiento, objetivo de una carga, etc).
+  \item El sistema comprueba que los datos introducidos sean correctos. \label{etdatos}
+  \item El sistema ejecuta la acción y se reflejan en la pantalla los cambios producidos en el juego.\label{etejecuta}
+  \item El caso de uso finaliza con éxito. \label{etfin}
+}
+{
+  \item[\ref{etini}-\ref{etdatos}:] El usuario cancela la acción.
+    \begin{enumerate}
+    \item No se hace nada y el caso de uso finaliza sin éxito.
+    \end{enumerate}
+  \item[\ref{etdatos}:] Los datos introducidos no son correctos.
+    \begin{enumerate}
+    \item Se muestra la descripción del error en el panel de errores.
+    \item El caso de uso finaliza sin éxito.
+    \end{enumerate}
+  \item[\ref{etejecuta}:] La acción provoca el fin de la partida.
+    \begin{enumerate}
+    \item El sistema manda una señal de fin de partida.
+\item Vuelve al paso \ref{etfin}.
+    \end{enumerate}
+}
+{Se realiza la acción asociada a la tarea elegida.}

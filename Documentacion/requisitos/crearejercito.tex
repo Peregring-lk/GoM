@@ -1,0 +1,19 @@
+\reqFuncional{Crear ejército}{Se crea un nuevo ejército}{Un usuario y el sistema}{El usuario se encuentra frente a la pantalla principal}
+{
+  \item Desde la pantalla principal, el usuario indica que desea crear un nuevo ejército.
+  \item <<include>> \ref{Modificar ejército (caso de uso abstracto)}: Modificar ejército. \label{cneeditar}
+  \item El usuario indica el nuevo nombre que dará a su ejército. El nombre no deberá tener más de 30 carácteres de longitud. \label{cnenombre}
+  \item El sistema comprueba que no exista un ejército con el mismo nombre. \label{cneexist}
+  \item El sistema guarda los datos del nuevo ejército.
+  \item El caso de uso finaliza con éxito.
+}
+{
+  \item[\ref{cnenombre}:] El usuario cancela la operación. 
+    \begin{enumerate}
+    \item Vuelve al paso \ref{cneeditar}.
+    \end{enumerate}
+  \item[\ref{cneexist}:] Ya existe un ejército con ese nombre.
+    \begin{enumerate}
+    \item Vuelve al paso \ref{cnenombre}.
+    \end{enumerate}
+}{El ejército ha sido creado.}

@@ -1,0 +1,35 @@
+\reqFuncional{Modificar ejército (caso de uso abstracto)}{Se edita un ejército}{Un usuario y el sistema}{El usuario ha elegido editar un ejército}
+{
+  \item El ejército a editar ya existe. \label{eeexiste}
+  \item Se muestra una pantalla con la configuración actual del ejército: raza actual, unidades del ejército, y posición, frente y número de efectivos de cada unidad.
+  \item El usuario, sin cambiar de raza, desea modificar su ejército. \label{eeraza}
+  \item El usuario puede añadir nuevas unidades a su ejército o eliminar las existentes. \label{eeini}
+  \item El usuario puede eliminar unidades existentes de su ejército.
+  \item El usuario puede modificar posición, frente o número de efectivos de cada unidad. \textit{GoM}. \label{eemoduni}
+  \item El usuario indica que ha terminado de editar su ejército. \label{eefin}
+  \item El sistema comprueba que el ejército actual cumple con la reglas impuestas por el reglamento de \textit{GoM}. \label{eereglas}
+  \item El caso de uso finaliza con éxito.
+}
+{
+  \item[\ref{eeexiste}:] El ejército a editar es nuevo.
+    \begin{enumerate}
+    \item <<extern>> \ref{Elegir raza (caso de uso abstracto)}: Elegir raza.
+    \item Va al paso \ref{eeraza}.
+    \end{enumerate}
+  \item[\ref{eeraza}-\ref{eefin}:] El usuario cancela la operación.
+    \begin{enumerate}
+    \item Se deshacen los cambios realizados.
+    \item Se vuelve al caso de uso anterior.
+    \item El caso de uso finaliza sin éxito.
+    \end{enumerate}
+  \item[\ref{eeini}-\ref{eemoduni}:] El usuario desea cambiar de raza.
+    \begin{enumerate}
+    \item <<extern>> \ref{Elegir raza (caso de uso abstracto)}: Elegir raza.
+    \item Va al paso \ref{eeraza}.
+    \end{enumerate}
+  \item[\ref{eereglas}:] La configuración actual del ejército no es permitida por el reglamento de \textit{GoM}.
+    \begin{enumerate}
+    \item Se indican los errores cometidos.
+    \item Se vuelve al paso \ref{eeini}.
+    \end{enumerate}
+}{El sistema guarda los cambios del nuevo ejército}
